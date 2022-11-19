@@ -1,0 +1,311 @@
+.redactor-styles {
+  font-family: "Trebuchet MS", "Helvetica Neue", Helvetica, Tahoma, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 30px;
+  box-sizing: border-box;
+  color: #333; }
+  .redactor-styles[dir="rtl"] {
+    direction: rtl;
+    unicode-bidi: embed; }
+    .redactor-styles[dir="rtl"] ul li,
+    .redactor-styles[dir="rtl"] ol li {
+      text-align: right; }
+    .redactor-styles[dir="rtl"] ul,
+    .redactor-styles[dir="rtl"] ol,
+    .redactor-styles[dir="rtl"] ul ul,
+    .redactor-styles[dir="rtl"] ol ol,
+    .redactor-styles[dir="rtl"] ul ol,
+    .redactor-styles[dir="rtl"] ol ul {
+      margin: 0 24px 0 0; }
+  @media (max-width: 768px) {
+    .redactor-styles {
+      font-size: 16px; } }
+  .redactor-styles a {
+    color: #256bc9; }
+    .redactor-styles a:focus, .redactor-styles a:hover {
+      color: #e21e3b; }
+  .redactor-styles h1,
+  .redactor-styles h2,
+  .redactor-styles h3,
+  .redactor-styles h4,
+  .redactor-styles h5,
+  .redactor-styles h6 {
+    font-family: "Trebuchet MS", "Helvetica Neue", Helvetica, Tahoma, sans-serif;
+    font-weight: bold;
+    color: #222;
+    text-rendering: optimizeLegibility;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 12px; }
+    .redactor-styles h1:empty,
+    .redactor-styles h2:empty,
+    .redactor-styles h3:empty,
+    .redactor-styles h4:empty,
+    .redactor-styles h5:empty,
+    .redactor-styles h6:empty {
+      min-height: 24px; }
+  .redactor-styles h1 {
+    font-size: 40px;
+    line-height: 44px; }
+  .redactor-styles h2 {
+    font-size: 32px;
+    line-height: 36px; }
+  .redactor-styles h3 {
+    font-size: 24px;
+    line-height: 32px; }
+  .redactor-styles h4 {
+    font-size: 21px;
+    line-height: 24px; }
+  .redactor-styles h5 {
+    font-size: 18px;
+    line-height: 24px; }
+  .redactor-styles h6 {
+    font-size: 16px;
+    line-height: 24px; }
+  .redactor-styles p,
+  .redactor-styles ul,
+  .redactor-styles ol,
+  .redactor-styles dl,
+  .redactor-styles blockquote,
+  .redactor-styles hr,
+  .redactor-styles pre,
+  .redactor-styles table,
+  .redactor-styles figure,
+  .redactor-styles address {
+    padding: 0;
+    margin: 0; }
+  .redactor-styles p:empty,
+  .redactor-styles blockquote:empty {
+    min-height: 24px; }
+  .redactor-styles p + h2,
+  .redactor-styles p + h3,
+  .redactor-styles p + h4,
+  .redactor-styles p + h5,
+  .redactor-styles p + h6,
+  .redactor-styles ul + h2,
+  .redactor-styles ul + h3,
+  .redactor-styles ul + h4,
+  .redactor-styles ul + h5,
+  .redactor-styles ul + h6,
+  .redactor-styles ol + h2,
+  .redactor-styles ol + h3,
+  .redactor-styles ol + h4,
+  .redactor-styles ol + h5,
+  .redactor-styles ol + h6,
+  .redactor-styles dl + h2,
+  .redactor-styles dl + h3,
+  .redactor-styles dl + h4,
+  .redactor-styles dl + h5,
+  .redactor-styles dl + h6,
+  .redactor-styles blockquote + h2,
+  .redactor-styles blockquote + h3,
+  .redactor-styles blockquote + h4,
+  .redactor-styles blockquote + h5,
+  .redactor-styles blockquote + h6,
+  .redactor-styles hr + h2,
+  .redactor-styles hr + h3,
+  .redactor-styles hr + h4,
+  .redactor-styles hr + h5,
+  .redactor-styles hr + h6,
+  .redactor-styles pre + h2,
+  .redactor-styles pre + h3,
+  .redactor-styles pre + h4,
+  .redactor-styles pre + h5,
+  .redactor-styles pre + h6,
+  .redactor-styles table + h2,
+  .redactor-styles table + h3,
+  .redactor-styles table + h4,
+  .redactor-styles table + h5,
+  .redactor-styles table + h6,
+  .redactor-styles form + h2,
+  .redactor-styles form + h3,
+  .redactor-styles form + h4,
+  .redactor-styles form + h5,
+  .redactor-styles form + h6,
+  .redactor-styles figure + h2,
+  .redactor-styles figure + h3,
+  .redactor-styles figure + h4,
+  .redactor-styles figure + h5,
+  .redactor-styles figure + h6 {
+    margin-top: 24px; }
+  .redactor-styles ul,
+  .redactor-styles ol,
+  .redactor-styles ul ul,
+  .redactor-styles ol ol,
+  .redactor-styles ul ol,
+  .redactor-styles ol ul {
+    margin: 0 0 0 24px; }
+  .redactor-styles ul li,
+  .redactor-styles ol li {
+    text-align: left; }
+  .redactor-styles ol ol li {
+    list-style-type: lower-alpha; }
+  .redactor-styles ol ol ol li {
+    list-style-type: lower-roman; }
+  .redactor-styles p,
+  .redactor-styles ul,
+  .redactor-styles ol,
+  .redactor-styles dl,
+  .redactor-styles blockquote,
+  .redactor-styles hr,
+  .redactor-styles pre,
+  .redactor-styles table,
+  .redactor-styles figure,
+  .redactor-styles address {
+    margin-bottom: 16px; }
+  .redactor-styles blockquote {
+    position: relative;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.6); }
+    .redactor-styles blockquote cite {
+      font-size: 80%; }
+  @media (min-width: 768px) {
+    .redactor-styles blockquote {
+      padding-left: 24px;
+      border-left: 1px solid rgba(0, 0, 0, 0.1); } }
+  .redactor-styles address {
+    font-style: normal; }
+  .redactor-styles dl dt {
+    font-weight: bold; }
+  .redactor-styles dd {
+    margin-left: 24px; }
+  .redactor-styles cite {
+    color: rgba(0, 0, 0, 0.5);
+    font-style: italic; }
+  .redactor-styles s,
+  .redactor-styles del {
+    text-decoration: line-through; }
+  .redactor-styles abbr[title],
+  .redactor-styles dfn[title] {
+    border-bottom: 1px dotted #000;
+    cursor: help; }
+  .redactor-styles strong,
+  .redactor-styles b {
+    font-weight: bold; }
+  .redactor-styles em,
+  .redactor-styles i {
+    font-style: italic; }
+  .redactor-styles sub,
+  .redactor-styles sup {
+    font-size: 10px;
+    line-height: 0;
+    position: relative;
+    margin-left: .2rem; }
+  .redactor-styles sup {
+    top: -.4rem; }
+  .redactor-styles sub {
+    bottom: -.2rem; }
+  .redactor-styles strong:empty, .redactor-styles b:empty, .redactor-styles em:empty, .redactor-styles i:empty, .redactor-styles sup:empty, .redactor-styles sub:empty, .redactor-styles u:empty, .redactor-styles ins:empty {
+    display: inline-block;
+    min-width: 1px;
+    min-height: 1rem; }
+  .redactor-styles figcaption {
+    margin: 4px 0;
+    font-size: 12px;
+    font-style: italic;
+    text-align: left; }
+  .redactor-styles ins,
+  .redactor-styles u {
+    text-decoration: underline; }
+  .redactor-styles mark {
+    background-color: #ffd61e;
+    color: #000;
+    text-decoration: none; }
+  .redactor-styles pre,
+  .redactor-styles code,
+  .redactor-styles kbd,
+  .redactor-styles samp,
+  .redactor-styles var,
+  .redactor-styles output {
+    font-size: 90%;
+    font-style: normal;
+    font-family: Consolas, Menlo, Monaco, "Courier New", monospace; }
+  .redactor-styles pre {
+    margin-top: 16px;
+    font-size: 90%;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.75);
+    overflow: auto;
+    background: rgba(0, 0, 0, 0.03);
+    padding: 16px 20px;
+    word-wrap: normal; }
+  .redactor-styles mark,
+  .redactor-styles code,
+  .redactor-styles samp,
+  .redactor-styles kbd {
+    padding: 2px 4px 1px 4px;
+    display: inline-block;
+    line-height: 1;
+    border-radius: 3px; }
+  .redactor-styles code {
+    background: rgba(0, 0, 0, 0.05); }
+  .redactor-styles pre code {
+    font-size: 100%;
+    border: none;
+    padding: 0;
+    background: none;
+    line-height: 24px; }
+  .redactor-styles var {
+    color: rgba(0, 0, 0, 0.5); }
+  .redactor-styles samp {
+    background: #46a9fc;
+    color: rgba(255, 255, 255, 0.9); }
+  .redactor-styles kbd {
+    background: #000;
+    color: rgba(255, 255, 255, 0.85);
+    white-space: nowrap; }
+  .redactor-styles hr {
+    display: block;
+    box-sizing: content-box;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1); }
+  .redactor-styles img,
+  .redactor-styles video,
+  .redactor-styles audio,
+  .redactor-styles embed,
+  .redactor-styles object {
+    max-width: 100%; }
+  .redactor-styles img,
+  .redactor-styles video,
+  .redactor-styles embed,
+  .redactor-styles object {
+    height: auto; }
+  .redactor-styles embed,
+  .redactor-styles object {
+    height: 100%; }
+  .redactor-styles img {
+    vertical-align: middle;
+    -ms-interpolation-mode: bicubic; }
+  .redactor-styles table {
+    border-collapse: collapse;
+    max-width: 100%;
+    width: 100%;
+    empty-cells: show; }
+    .redactor-styles table caption {
+      text-transform: uppercase;
+      padding: 0;
+      color: rgba(0, 0, 0, 0.5);
+      font-size: 11px; }
+    .redactor-styles table th,
+    .redactor-styles table td {
+      border: 1px solid #eee;
+      padding: 16px;
+      padding-bottom: 15px; }
+    .redactor-styles table tfoot th,
+    .redactor-styles table tfoot td {
+      color: rgba(0, 0, 0, 0.5); }
+  .redactor-styles .video-container {
+    height: 0;
+    padding-bottom: 56.25%;
+    position: relative;
+    margin-bottom: 16px; }
+    .redactor-styles .video-container iframe,
+    .redactor-styles .video-container object,
+    .redactor-styles .video-container embed {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100% !important;
+      height: 100% !important; }

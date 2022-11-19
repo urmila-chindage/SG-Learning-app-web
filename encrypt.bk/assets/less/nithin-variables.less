@@ -1,0 +1,180 @@
+/* login input styles are differ from other input styles */
+
+a, button{outline:none !important;}
+// width 100% for common 
+.width100{
+    width:100%;
+}
+.white{color:#fff;}
+.m0{margin:0px !important;}
+.mb10{margin-bottom:10px !important;}
+.mb30{margin-bottom:30px !important;}
+.p0{padding:0px !important;}
+.h235{height:235px !important;}
+
+// active features with background and color
+@background-act:#00a65a;
+@color-act:#fff;
+
+.activeG(
+@active-background:@background-act;
+@active-color:@color-act;){
+    background:@active-background;
+    color:@active-color;
+}
+
+// In active features with background and color
+@background-inact:#ffa800;
+@color-inact:#fff;
+
+.inactiveG(
+@inactive-background:@background-inact;
+@inactive-color:@color-inact;){
+    background:@inactive-background;
+    color:@inactive-color;
+}
+
+// Input styles - login page
+@login-input-height:42px; 
+@login-padding-vertical:10px; 
+@login-padding-horizontal:10px; 
+@login-padding-left:40px;
+@login-font-size:14px; 
+@login-line-height:30px; 
+@login-border-radius:3px;
+@login-box-shadow:inset 1px 1px 2px rgba(0, 0, 0, 0.3);
+@login-input-focus:1px solid;
+
+.Input-size(
+@input-height:@login-input-height;
+@padding-vertical:@login-padding-vertical;
+@padding-horizontal:@login-padding-horizontal;
+@font-size:@login-font-size;
+@line-height:@login-line-height;
+@border-radius:@login-border-radius){
+  height:@input-height;
+  padding:@padding-vertical  @padding-horizontal @padding-vertical @login-padding-left;
+  font-size:@font-size;
+  line-height:@line-height;
+  border-radius:@border-radius;
+  box-shadow:@login-box-shadow;
+  &:focus{
+      border:@login-input-focus;
+    }
+}
+
+    // login button in login box
+    @padding-login-btnh:0px;
+    @padding-login-btnv:40px;
+    @login-font-size:15px;
+    @login-float-set:left;
+    
+    @padding-horizontal:@padding-login-btnh;
+    @padding-vertical:@padding-login-btnv;
+    @login-font-set:@login-font-size;
+    @login-float-change:@login-float-set;
+    
+    
+    // Login padding common
+    @pddng-box:20px;
+    @pddng-position:relative;
+    
+    .login-padding{
+    @padding-box:@pddng-box;
+    @padding-position:@pddng-position;
+    
+    padding:@padding-box;
+    position:@padding-position;
+    }
+    
+    
+    /* Content builder variables*/
+    
+    // builder main content wrapper
+    @padding-right:350px;
+    @padding-zero:0px;
+    @background:#fff;
+    .bulder-content-items(
+    @builder-padding-right:@padding-right;
+    @builder-padding-zero:@padding-zero;
+    @builder-background:@background;
+    ){
+    padding: @builder-padding-zero @builder-padding-right @builder-padding-zero @builder-padding-zero;
+    background: @builder-background;
+    }
+    
+    // active and inactive for icons and text
+    // Can change the color and size according to the needs or requirement
+    
+    @active-color:#00a65a;
+    @active-font-size:14px;
+    @font-style:italic;
+    
+    .lbel-active(
+        @label-color:@active-color;
+        @label-font-size: @active-font-size;
+        @label-font-style:@font-style;
+    ){
+       color:@label-color;
+       font-size:@label-font-size;
+       font-style:@label-font-style;
+    }
+    
+
+// Delete button common --- red cross delte button mixin
+@Colr-red:#f00;
+@Font-sz:24px;
+.Redcross-ico(
+@Crss-colo:@Colr-red;
+@crss-size:@Font-sz;
+){
+    font-size:@crss-size;
+    color:@Crss-colo;
+}
+
+    /*---------      Profile page varialbes starts here          --------------*/
+    
+
+@box-shdw-tile: 0px 1px 4px #ccc;
+@padding-tile:15px;
+@min-hite-tile:180px;
+@border-rad:3px;
+
+// badges variables in tiles
+@badg-border-rads:5px;
+@badge-display:inline-block;
+@badge-display-cell:block;
+@badge-min-hite:100px;
+@badge-min-width:80px;
+
+
+// The height minus after the menu ba rand breadcrumb to the profile container
+@backgrnd-profile-hite:80px;
+
+// Status Red color
+
+@status-red:#f00;
+@status-green:#09bf63;
+@status-blue:#0072ff;
+@status-green-dark:#299f00;
+@status-orange:#ff6000;
+@status-light-grey:#878788;
+
+
+
+// Header profile image width and height ----------
+// you can calculate the width with this width
+@prfl-img-wdth:155px;
+@prfl-img-height:@prfl-img-wdth;
+
+// Header top profile title and links
+
+@color-common:#2e3e4e;
+@top-font-24:24px;
+@top-font-14:14px;
+
+
+// Modal style variables
+/*###########     Modal inside box style   ####################*/
+
+@Insil-min-hgt:300px;

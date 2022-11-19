@@ -1,0 +1,328 @@
+    	.asssignment-report-wrapper {
+    	    display: flex;
+    	    background: #f7f8fa;
+    	    min-height: 100vh;
+    	}
+    	
+    	.assignment-answer-wrapper {
+    	    border-right: 2px solid #e5e6e8;
+    	    /*padding: 0px 35px;*/
+    	}
+    	
+    	.assinment-content p {
+    	    word-break: break-all;
+    	}
+    	
+    	.assignment-container {
+    	    padding: 0px 35px;
+    	}
+    	
+    	.assignment-evaluation-wrapper {}
+    	
+    	.assignment-profile-info {
+    	    display: flex;
+    	    padding: 20px 25px;
+    	    border-bottom: 2px solid #e5e6e8;
+    	}
+    	
+    	.assignment-avatar-info {
+    	    display: inline-flex;
+    	    width: 50%;
+    	}
+    	
+    	.assignment-profile-info .stud-name {
+    	    font-weight: 600;
+    	    font-size: 14px;
+    	}
+    	
+    	.assignment-profile-info .avatar-image-info {
+    	    padding-right: 10px;
+    	}
+    	
+    	.assignment-profile-info .nav-next {
+    	    width: 50%;
+    	}
+    	
+    	.assignment-report {
+    	    width: 100%;
+    	    margin: 0;
+    	}
+    	
+    	.assignment-question {
+    	    font-size: 20px;
+    	    font-weight: 600;
+    	    padding: 25px 0px;
+    	    line-height: 35px;
+    	}
+    	
+    	.assignment-question-main {
+    	    font-weight: 600;
+    	    padding: 25px 0px;
+    	    line-height: 26px;
+    	    color: #2078e6;
+    	}
+    	
+    	.assignment-answer {
+    	    font-size: 15px;
+    	    font-weight: 400;
+    	    line-height: 26px;
+    	    text-align: justify;
+    	    word-break: break-word;
+    	}
+    	
+    	.student-responds {}
+    	
+    	.submition-date {
+    	    font-weight: 600;
+    	    color: #e86f26;
+    	    display: block;
+    	}
+    	
+    	.next-btn {
+    	    color: #2c78d6;
+    	    font-weight: 600;
+    	    font-size: 14px;
+    	    line-height: 32px;
+    	}
+    	
+    	.next-btn:focus {
+    	    color: #2c78d6
+    	}
+    	
+    	.assesment-title {
+    	    font-weight: 600;
+    	    font-size: 14px;
+    	    text-transform: uppercase;
+    	}
+    	
+    	.grade-table li {
+    	    font-size: 15px;
+    	    font-weight: 600;
+    	    float: left;
+    	    height: 45px;
+    	    width: 40px;
+    	    border: 1px solid #ccc;
+    	    border-right: 0px;
+    	    padding: 12px 0;
+    	    cursor: pointer;
+		}
+		
+		.grade-table li:first-child {
+			border-top-left-radius: 6px;
+			border-bottom-left-radius: 6px;
+		}
+		.grade-table li:last-child {
+			border-top-right-radius: 6px;
+			border-bottom-right-radius: 6px;
+			border-right: 1px solid #ccc;
+		}
+    	
+    	.grade-table li:hover {
+    	    background: #1bc001;
+    	    color: #fff;
+    	}
+
+    	.assessment-col {
+    	    padding: 15px 25px;
+    	    float: right;
+    	}
+    	
+    	.grade-assignment {
+    	    font-weight: 600;
+    	}
+    	
+    	.blue-text {
+    	    color: #0076f9;
+    	    font-size: 13px;
+    	    font-weight: 400;
+    	}
+    	
+    	.mark {
+    	    height: 45px !important;
+    	}
+    	
+    	.evaluation-info {
+    	    margin: 15px 0;
+    	}
+    	
+    	.assignment-report-chart {
+    	    background-color: #fff;
+    	    padding: 15px 25px;
+    	}
+    	
+    	.assignment-feedback {
+    	    padding: 15px 25px;
+    	}
+    	
+    	.assignment-feedback p {
+    	    line-height: 18px;
+    	    font-size: 12px;
+    	    padding-top: 10px;
+    	    word-break: break-all;
+    	}
+    	
+    	.feedback-status {
+    	    font-size: 12px;
+    	    display: block;
+    	    text-align: right;
+    	    font-weight: 600;
+    	    color: #0064e7;
+    	    font-style: italic;
+    	}
+    	
+    	.border-line {
+    	    height: 2px;
+    	    width: 100%;
+    	    background: #e5e6e8;
+    	    margin: 15px 0;
+    	}
+    	
+    	.feedback-text {
+    	    resize: none;
+    	    border: 1px solid #656565 !important;
+    	}
+    	
+    	.feedback-btn-holder {
+    	    padding: 15px 0;
+    	}
+    	
+    	.chart-box {
+    	    height: 165px;
+    	}
+    	
+    	.assignment-report-chart .unique-percent {
+    	    font-size: 44px;
+    	    color: #0064e7;
+    	}
+    	
+    	.assignment-report-chart .unique-percent-title {
+    	    font-size: 15px;
+    	    color: #0064e7;
+    	    display: inline-block;
+    	}
+    	
+    	.assignment-report-chart .copy-percent {
+    	    font-size: 44px;
+    	    color: #e00000;
+    	}
+    	
+    	.assignment-report-chart .copy-percent-title {
+    	    font-size: 15px;
+    	    color: #e00000;
+    	    display: inline-block;
+    	}
+    	
+    	.assignment-report-chart .chart-info {
+    	    padding: 25px 0;
+    	}
+    	
+    	#content-chart {
+    	    position: relative;
+    	    left: -25px;
+    	    bottom: 25px;
+    	}
+    	
+    	.ques-option-info {
+    	    font-size: 14px;
+    	    color: #04a6f1;
+    	    vertical-align: -webkit-baseline-middle;
+    	}
+    	
+    	.ques-option-info.report-icn:before {
+    	    content: "";
+    	    height: 10px;
+    	    background: url(./images/quiz_report.png);
+    	    background-repeat: no-repeat;
+    	    display: inline-block;
+    	    padding-right: 30px;
+    	}
+    	
+    	.attach-assignment-file {
+    	    display: inline-block;
+    	    padding: 3px 14px;
+    	    border: 1px solid #64277d;
+    	    border-radius: 28px;
+    	    font-size: 13px;
+    	    font-weight: 400;
+    	    color: #64277d;
+    	    margin: 0 10px 10px 0;
+    	    cursor: pointer;
+    	}
+    	
+    	.assignment-attachment-holder {
+    	    display: flex;
+    	    flex-wrap: wrap;
+    	    padding: 25px 0px;
+    	}
+    	
+    	.assignment-question-wrapper-toggle .assignment-attachment-holder {
+    	    padding-top: 0;
+    	}
+    	
+    	.view-assignment-ques span {
+    	    background: #2078e6;
+    	    color: #fff;
+    	    font-size: 14px;
+    	    font-weight: 400;
+    	    padding: 6px 26px;
+    	    margin-top: -1px;
+    	    border-radius: 0px 0px 6px 6px;
+    	    display: inline-block;
+    	    cursor: pointer;
+    	    position: relative;
+    	    top: 32px;
+    	}
+    	
+    	.view-assignment-question {
+    	    display: none;
+    	    position: relative;
+    	    top: 30px;
+    	    padding: 0 25px;
+    	}
+    	
+    	.assignment-question-wrapper-toggle {
+    	    position: relative;
+    	    top: -32px;
+    	    box-shadow: 0px 13px 14px -8px #c5c5c5;
+    	}
+    	
+    	.view-assignment-toggle-text {
+    	    box-shadow: 0px 13px 14px -8px #c5c5c5;
+    	}
+    	
+    	@media (max-width:1300px) {
+    	    .grade-table li {
+    	        height: 45px;
+    	        width: 30px;
+    	    }
+    	    #content-chart {
+    	        position: relative;
+    	        left: -25px;
+    	        bottom: -5px;
+    	    }
+    	    .assignment-report-chart .unique-percent {
+    	        font-size: 38px;
+    	        color: #0064e7;
+    	    }
+    	    .assignment-report-chart .copy-percent {
+    	        font-size: 38px;
+    	        color: #e00000;
+    	    }
+    	    .assignment-report-chart .unique-percent-title {
+    	        font-size: 12px;
+    	        color: #0064e7;
+    	        display: inline-block;
+    	    }
+    	    .assignment-report-chart .copy-percent-title {
+    	        font-size: 12px;
+    	        color: #e00000;
+    	        display: inline-block;
+    	    }
+    	}
+    	
+    	.page-footer {
+    	    position: absolute !important;
+    	    bottom: 0 !important;
+    	    width: 100% !important;
+    	    height: 2.5rem !important;
+    	}

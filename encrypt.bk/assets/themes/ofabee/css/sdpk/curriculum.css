@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none !important;
+}
+a:hover{
+  color: #444;
+}
+.info-bold{font-weight: 600 !important; font-size: 15px !important;}
+.curriculam-container{
+  padding: 0 30px 55px 30px;
+  background: #fff;
+}
+.milestone-holder{
+  float: left;
+  position: absolute;
+  background: #ffffff;
+  z-index: 99;
+  display: inline-block;
+  left: 10px;
+  height: 100%;
+}
+.milestone{
+  display: block;
+  width: 25px;
+  height: 25px;
+  font-size: 22px;
+  background: #fff;
+  position: relative;
+  left: -1px;
+  z-index: 9999;
+  border-radius: 100%;
+  border: 2px solid #babec2;
+  box-sizing: inherit;
+  transform: translate(0,-50%);
+  top: 50%;
+}
+.tail-up{
+  background: rgb(186, 190, 194);
+  left: 10px;
+  top: 0;
+  bottom: 50%;
+  position: absolute;
+  width: 2px;
+}
+.tail-down{
+  background: rgb(186, 190, 194);
+  left: 10px;
+  top: 50%;
+  bottom: 0%;
+  position: absolute;
+  width: 2px;
+}
+.timeline-text{
+  padding: 0 15px;
+  overflow: hidden;
+  width: 100%;
+  vertical-align: top;
+}
+.curriculam-title{padding: 25px 0;}
+.curriculam-title h4{    
+  font-size: 22px;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  color:#64277d;
+}
+.timeline-text .curriculam-info-text {
+  padding: 20px 20px 20px 30px;
+  margin-bottom: 0;
+  /*width: 70%;*/
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  color: #000;
+}
+
+.timeline-row{
+  background: #fff;
+  border-bottom: 1px solid #D6D8DA;
+  box-sizing: border-box;
+  display: block;
+  vertical-align: top;
+  width: 100%;
+  border-top: 1px solid #D6D8DA;
+  margin-top: -1px;
+  position: relative;
+}
+.timeline-row a{
+  display: block;
+  position: relative;
+}
+
+/*sprite settings*/
+.milestone .milestone-icon{
+  background: url(../img/lecture-icons.png);
+  background-size: 60px;
+  background-repeat: no-repeat;
+  height: 20px;
+  width: 16px;
+  display: inline-block;
+}
+.milestone .code-grey{background-position: -15px -73px;margin-left: 3px;}
+.milestone .code-green{background-position: -31px -73px;margin-left: 3px;}
+.milestone .code-blue{background-position: -47px -73px;margin-left: 3px;}
+
+.milestone .assignment-grey{background-position: -16px -57px;margin-left: 5px;}
+.milestone .assignment-green{background-position: -31px -55px;margin-left: 4px;}
+.milestone .assignment-blue{background-position: -47px -55px;margin-left: 4px;}
+
+.milestone .video-grey{background-position: -14px 1px;margin-left: 3px;}
+.milestone .video-green{background-position: -30px 2px;margin-left: 3px;}
+.milestone .video-blue{background-position: -45px 2px;margin-left: 3px;}
+
+.milestone .quiz-grey{background-position: -18px -45px;margin-left: 3px;background-size: 70px;}
+.milestone .quiz-green{background-position: -37px -44px;margin-left: 3px;background-size: 70px;}
+.milestone .quiz-blue{background-position: -55px -44px;margin-left: 3px;background-size: 70px;}
+
+.milestone .drop-grey{background-position: -15px -91px;margin-left: 3px;}
+.milestone .drop-green{background-position: -31px -91px;margin-left: 3px;}
+.milestone .drop-blue{background-position: -46px -91px;margin-left: 3px;}
+
+.milestone .document-grey{background-position: -15px -111px;margin-left: 3px;}
+.milestone .document-green{background-position: -30px -110px;margin-left: 3px;}
+.milestone .document-blue{background-position: -46px -110px;margin-left: 3px;}
+
+.milestone .audio-grey{background-position: -15px -129px;margin-left: 3px;}
+.milestone .audio-green{background-position: -31px -128px;margin-left: 3px;}
+.milestone .audio-blue{background-position: -46px -128px;margin-left: 3px;}
+
+.milestone .survey-grey{background-position: -15px -147px;margin-left: 3px;}
+.milestone .survey-green{background-position: -31px -147px;margin-left: 3px;}
+.milestone .survey-blue{background-position: -46px -147px;margin-left: 3px;}
+
+.milestone .certificate-grey{
+  background-position: -17px -22px;
+  margin-left: 3px;
+  background-size: 70px;
+}
+.milestone .certificate-green{
+  background-position: -36px -22px;
+  margin-left: 3px;
+  background-size: 70px;
+}
+.milestone .certificate-blue{
+  background-position: -54px -22px;
+  margin-left: 3px;
+  background-size: 70px;
+}
+
+
+/*sprite ends*/
+
+a:hover .tail-down{
+  background: #15c26a;
+}
+a:hover .tail-up{
+  background: #15c26a;
+}
+a:hover .milestone{
+  border-color: #15c26a;
+}
+.orange-text{color:#e97b56 !important;}
+.green-text{color:#1e9f00 !important;}
+.orange-eye{
+  background-image: url('../img/orange-eye.svg');
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 14px;
+  width: 22px;
+}
+.green-eye{
+  background-image: url('../img/green-eye.svg');
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 14px;
+  width: 22px;
+}
+.visible-hidden{visibility: hidden;}
+
+.ticked{
+  background-image: url('../img/tick.svg');
+  background-repeat: no-repeat;
+  background-size: 15px;
+  height: 14px;
+  width: 22px;
+  position: absolute;
+  left: 10px;
+  top: -5px;
+}
+
+.curriculam-info-view,.curriculam-info-duration{
+  padding: 20px 20px 20px 30px;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  color: #000;
+}
+
+
+
+.tutor-name-label a{color: #ffc000;}
+
+.redactor-editor{overflow-x: auto;}
+
+@media (max-width:992px){
+  .timeline-text {display: flex;}
+  .timeline-text .curriculam-info-text {padding: 20px 0px 20px 30px !important;}
+  .curriculam-info-view{padding: 20px 0px 20px 0px !important;text-align: right;}
+  .curriculam-info-duration{display: none;}
+  .curriculam-container {padding: 0px;background: #fff;}
+  .timeline-row {border-bottom: none;border-top: none;position: relative;padding-left: 15px;}
+}
+
+@media (max-width:480px){
+  .curriculam-info-view.orange-text{display: none;}
+  .curriculam-info-text{text-align: left !important;width: 100%;}
+  .curriculam-container .curriculam-title{
+    /*border-bottom: 1px solid #eaeaea;*/
+    border-top: 4px solid #f9f9f9;
+    padding: 15px;
+    margin: 5px 0px;
+  }
+  .timeline-text .curriculam-info-text {padding: 10px 0px 10px 30px !important;font-weight: 400 !important;}
+  .curriculam-container .curriculam-title h4 {font-size: 20px;}
+  .curriculam-info-view.green-text{display: none;}
+  .curriculam-container .timeline-text{padding-right: 0px;}
+  .fundamentals-skill .share-dropdown2{display: none;}
+  .change-size-of-abt-course .redactor-content {padding: 15px 15px !important;}
+  .change-size-of-abt-course .formpage-heading{margin-bottom: 16px;padding: 0;margin-top: 0px;}
+  .bar-rating{margin: 15px 0px;}
+  .curriculum{padding-bottom: 10px !important;}
+  .change-size-of-abt-course .bar-rating{display: flex;}
+  .star-rating-left{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  }
+
+  .change-size-of-abt-course .big-rating-no{font-size: 60px;}
+  .course-val-info{padding: 5px 0;}
+  .course-val-info .course-icon{min-width: 40px;}
+  .course-val-info .fundamental-right-font-size{margin-bottom: 0px;font-size: 14px;font-weight: 400;}
+  .course-val-info .supermin-left{
+    display: flex;
+    align-items: center;
+  }
+  .course-val-info .supermin-left:after {
+    content: ':';
+    position: absolute;
+    right: 0px;
+    top: 2px;
+  }
+
+}

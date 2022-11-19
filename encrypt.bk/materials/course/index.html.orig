@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+<<<<<<< HEAD
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+=======
+  <link id="xlink" rel="icon" href="%PUBLIC_URL%/../../favicon.png" type="image/x-icon"/>
+  <link id="plink" rel="shortcut icon" type="image/png" href="%PUBLIC_URL%/../../favicon.png"/>
+>>>>>>> SGlearningapp
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+  <meta name="theme-color" content="#000000">
+  <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+  <!--<link rel="manifest" href="%PUBLIC_URL%/manifest.json">-->
+  <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+  <title>Loading...</title>
+<<<<<<< HEAD
+=======
+  <style>.root-load{position:fixed;top:0;bottom:0;left:0;right:0;z-index:999;font-size:20px;display:flex;align-items:flex-start;flex-direction:column;height:100vh}.fbcontent-shape{height:2.5vh;margin-bottom:1.5vh;border-radius:2px}.fbbody,.fbhead{margin-left:7.5vw;margin-top:6vh}.fbbody{margin-top:16vh;margin-bottom:2vh}.fbbody:last-child{margin-top:2vh}.fbhead .fbcontent-shape:first-child{height:6vh;width:35vw;margin-bottom:2vh}.fbhead .fbcontent-shape:nth-child(2){width:18vw;height:4vh}.fbbody .fbcontent-shape{width:85vw}.fbbody .fbcontent-shape:last-child{width:30vw}.fbloads{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-name:placeload;animation-name:placeload;-webkit-animation-timing-function:linear;animation-timing-function:linear;background:#f6f7f8;background:#eee;background:-webkit-gradient(linear,left top,right top,color-stop(8%,#eee),color-stop(18%,#ddd),color-stop(33%,#eee));background:-webkit-linear-gradient(left,#eee 8%,#ddd 18%,#eee 33%);background:linear-gradient(to right,#eee 8%,#ddd 18%,#eee 33%);-webkit-background-size:800px 104px;background-size:1200px 104px;position:relative}@-webkit-keyframes placeload{0%{background-position:-468px 0}100%{background-position:468px 0}}@keyframes placeload{0%{background-position:-468px 0}100%{background-position:468px 0}}</style>
+  <script>
+    document.head||(document.head=document.getElementsByTagName("head")[0]);function changeFavicon(e){var n=document.createElement("link");var d=document.createElement("link");var t=document.getElementById("xlink");var a=document.getElementById("plink");d.id="plink";d.rel="shortcut icon";d.type="image/png";d.href=e;n.id="xlink";n.rel="icon";n.type="image/x-icon";n.href=e;if(t){document.head.removeChild(t)}if(a){document.head.removeChild(a)}document.head.appendChild(n);document.head.appendChild(d)}changeFavicon("%PUBLIC_URL%/../../uploads/"+window.location.host+"/favicon.png");
+  </script>
+>>>>>>> SGlearningapp
+</head>
+
+<body>
+  <noscript>
+    You need to enable JavaScript to run this app.
+  </noscript>
+  <div id="root"></div>
+  <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  <script src="%PUBLIC_URL%/js/combined.min.js"></script>
+</body>
+
+</html>

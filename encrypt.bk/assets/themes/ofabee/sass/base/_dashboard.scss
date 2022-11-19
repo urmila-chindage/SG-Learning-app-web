@@ -1,0 +1,169 @@
+.sction_div {
+	width: 100%;
+	float: left;
+	margin: 0;
+
+.nav-tabs {
+	>li.active {
+		>a {
+			color: #ff9325;
+			&:hover {
+				color: #ff9325;
+			}
+			&:focus {
+				color: #ff9325;
+			}
+		}
+	}
+	>li {
+		>a {
+			color: #3d3d3d;
+			font-size:16px;
+		}
+	}
+	border-bottom: 1px solid #ddd;
+}
+.tab_box2 {
+			width: 100%;
+			float: left;
+			background-color: #ffffff;
+			box-shadow: 0 2px 3px #dddddd;
+			padding: 0 0 8px;
+			img {
+				width: 100%;
+				float: left;
+			}
+			.img_hover{ width:100%; float:left; position:relative;
+			span{ position:absolute; left:0px; right:0px; top:0px; bottom:0px; background:rgba(54,54,54,0.5); opacity:0; text-align:center; -webkit-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+			a{ font-size:13px; color:#fff; background:url(../images/course.png) no-repeat right center rgba(255,147,37,0.7); border-radius:4px; display:inline-block; padding:3px 22px 5px 10px; margin-top:20%; }
+			}
+			&:hover span{ opacity:1; }
+			}
+			h2 {
+				width: 100%;
+				float: left;
+				min-height:36px;
+				color: #4c4c4c;
+				font-size: 14px;
+				line-height: 18px;
+				padding: 0px 10px;
+				margin: 18px 0px 7px 0px;
+				font-family: 'MontserratSemiBold';
+			}
+			h3 {
+				width: 100%;
+				float: left;
+				color: #4c4c4c;
+				font-size: 12px;
+				line-height: 24px;
+				padding: 0px 10px;
+				margin: 0 0 10px;
+			}
+		}
+		.tab_hd {
+			width: 100%;
+			float: left;
+			font-size: 20px;
+			color: #3d3d3d;
+			padding: 30px 0px;
+			margin: 0;
+		}
+		
+		.star2 {
+			width: 100%;
+			float: left;
+			margin: 14px 0px 20px 0px;
+			img {
+				width: auto;
+				float: left;
+			}
+		}
+		.stra_hd2 {
+			width: auto;
+			float: left;
+			font-size: 14px;
+			color: #707070;
+		}
+		.rate2 {
+			width: 100%;
+			float: left;
+			h2 {
+				width: 100%;
+				float: left;
+				min-height:inherit;
+				font-size: 21px;
+				line-height: 18px;
+				color: #4c4c4c;
+				font-family: 'MontserratRegular';
+			}
+			span {
+				padding: 0 0 0 12px;
+				text-decoration: line-through;
+				font-size: 16px;
+			}
+		}
+.tab-content{ .tab-pane{ .row{ .col-md-3{ margin-bottom:50px; } } } }
+.tab-content {
+	>.tab-pane {
+		
+		
+	}
+}
+.starability-basic {
+	>input {
+		&:checked {
+			~ {
+				label {
+					background-position: 0 -18px;
+				}
+			}
+		}
+		&:focus {
+			~ {
+				label {
+					background-position: 0 -18px;
+				}
+			}
+		}
+		&:hover {
+			~ {
+				label {
+					background-position: 0 -18px;
+				}
+			}
+		}
+	}
+	>label {
+		width: 20px;
+		height: 18px;
+	}
+	width: auto;
+	float: left;
+	padding: 0px 10px;
+	min-height: auto;
+}
+.form1 {
+	width: 100%;
+	float: left;
+	span {
+		width: auto;
+		float: left;
+		font-size: 15px;
+		color: #4c4c4c;
+	}
+}
+}
+.progress_main{ width:100%; float:left; padding:5px 10px 0px;
+.progress{ width:100%; height:3px; float:left; margin:0px 0px 7px; background-color:#cdcdcd;
+.progress-bar{ background-color:#7aedb1; box-shadow:none; }
+}
+.sr-only{ position:relative; height:auto; width:100%; float:left; font-size:13px; color:#4c4c4c; font-family: 'MontserratSemiBold'; }
+}
+.lectures{ width:100%; float:left; padding:4px 10px 7px;
+.left{ width:auto; float:left; font-size:11px; color:#4c4c4c; font-family: 'MontserratLight'; }
+.right{ width:auto; float:right; font-size:11px; color:#4c4c4c; font-family: 'MontserratLight'; }
+}
+.grey_main{ width:100%; float:left; background:#e8e8e8; margin-top:10px; border-top:1px solid #c0c0c0; }
+.tab-content{ background:#fff; }

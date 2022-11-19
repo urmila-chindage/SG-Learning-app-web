@@ -1,0 +1,241 @@
+                                        @charset "utf-8";
+                                        /* CSS Document */
+                                        
+                                        span {
+                                            font-weight: normal;
+                                        }
+                                        
+                                        .modal-header-alter {
+                                            border-bottom: none;
+                                        }
+                                        
+                                        .modal-title-center {
+                                            text-align: center;
+                                            color: #4d4d4d;
+                                            font-weight: 400;
+                                        }
+                                        
+                                        .modal-body-bottom {
+                                            padding-bottom: 30px;
+                                        }
+                                        
+                                        .timmer-wraper {
+                                            text-align: center;
+                                        }
+                                        
+                                        .timmer {
+                                            border: 1px solid #4d4d4d;
+                                            border-radius: 50px;
+                                            color: #f58700;
+                                            display: inline-block;
+                                            font-size: 18px;
+                                            font-weight: 600;
+                                            height: 50px;
+                                            margin: 0 auto;
+                                            padding: 10px 25px;
+                                            width: 200px;
+                                        }
+                                        
+                                        .answer-row {
+                                            display: block;
+                                            margin-bottom: 35px;
+                                            margin-top: 30px;
+                                        }
+                                        
+                                        .green-ans-wrap {
+                                            display: inline-block;
+                                            width: 45%;
+                                            float: left;
+                                        }
+                                        
+                                        .green-block {
+                                            background: #00c853;
+                                            display: inline-block;
+                                            height: 25px;
+                                            width: 25px;
+                                            vertical-align: bottom;
+                                            margin-right: 15px;
+                                        }
+                                        
+                                        .block-texts {
+                                            vertical-align: text-bottom;
+                                            color: #4d4d4d;
+                                        }
+                                        
+                                        .red-ans-wrap {
+                                            display: inline-block;
+                                            width: 45%;
+                                        }
+                                        
+                                        .red-ans-wrap {
+                                            display: inline-block;
+                                            width: 45%;
+                                            float: right;
+                                        }
+                                        
+                                        .block-texts {
+                                            vertical-align: text-bottom;
+                                            color: #4d4d4d;
+                                        }
+                                        
+                                        .blue-block {
+                                            background: #3b4ea9;
+                                        }
+                                        
+                                        .not-vis {
+                                            background: none;
+                                            border: 1px solid #a6a6a6;
+                                        }
+                                        
+                                        .modal-footer-btn {
+                                            width: calc(100%);
+                                            margin: 0 auto;
+                                        }
+                                        
+                                        .modalorange-btn {
+                                            background: #f58700;
+                                            color: #fff;
+                                            display: inline-block;
+                                            font-size: 16px;
+                                            padding: 13px 50px;
+                                            text-decoration: none;
+                                            vertical-align: top;
+                                            white-space: nowrap;
+                                            border-radius: 0px;
+                                            margin-right: 15px;
+                                        }
+                                        
+                                        .modalorange-btn:hover,
+                                        modalorange-btn:active,
+                                        modalorange-btn:focus {
+                                            color: #fff;
+                                            background: #EA7F0A;
+                                        }
+                                        
+                                        .modal-width-expander {
+                                            width: 200px;
+                                        }
+                                        
+                                        .modalGrey-btn {
+                                            background: #4d4d4d;
+                                            color: #fff;
+                                            display: inline-block;
+                                            font-size: 16px;
+                                            padding: 13px 50px;
+                                            text-decoration: none;
+                                            vertical-align: top;
+                                            white-space: nowrap;
+                                            border-radius: 0px;
+                                        }
+                                        
+                                        .modalGrey-btn:hover,
+                                        .modalGrey-btn:focus,
+                                        .modalGrey-btn:active {
+                                            background: #565454;
+                                            color: #fff;
+                                        }
+                                        
+                                        .modal-content-wrapper {
+                                            width: calc(100% - 78px);
+                                        }
+                                        
+                                        .red-block {
+                                            background: #ff5252;
+                                            display: inline-block;
+                                            height: 25px;
+                                            width: 25px;
+                                            vertical-align: bottom;
+                                            margin-right: 15px;
+                                        }
+                                        
+                                        .not-vis {
+                                            background: none;
+                                            border: 1px solid #a6a6a6;
+                                        }
+                                        
+                                        .question-table table,
+                                        .question-table td,
+                                        .question-table th {
+                                            border: 1px solid black;
+                                            padding: 5px;
+                                        }
+                                        
+                                        .question-table table {
+                                            border-collapse: collapse;
+                                            min-width: 300px;
+                                        }
+                                        
+                                        .question-table th {
+                                            height: 50px;
+                                        }
+                                        
+                                        @media only screen and (max-width: 767px) {
+                                            .modal-footer-btn {
+                                                margin: 0 auto;
+                                                width: 100%;
+                                            }
+                                            .modal-width-expander {
+                                                width: 46%;
+                                            }
+                                        }
+                                        
+                                        @media only screen and (max-width: 507px) {
+                                            .timmer-wraper {
+                                                text-align: left;
+                                            }
+                                            .timmer {
+                                                display: block;
+                                            }
+                                            .timmer {
+                                                text-align: center;
+                                            }
+                                            .answer-row {
+                                                display: block;
+                                                margin-top: 0px;
+                                                margin-bottom: 0px;
+                                            }
+                                            .green-ans-wrap {
+                                                display: block;
+                                                margin-bottom: 20px;
+                                                margin-top: 20px;
+                                                width: 100%;
+                                            }
+                                            .red-ans-wrap {
+                                                display: block;
+                                                width: 100%;
+                                            }
+                                            .modalorange-btn {
+                                                margin-bottom: 15px;
+                                            }
+                                            .modal-width-expander {
+                                                width: 100%;
+                                            }
+                                            .modal-content-wrapper {
+                                                width: 100%;
+                                            }
+                                            .modal-footer-btn {
+                                                width: 100%;
+                                            }
+                                            .modal-footer-btn {
+                                                padding-left: 0px;
+                                            }
+                                            .modal-footer-btn {
+                                                margin-top: 25px;
+                                            }
+                                        }
+                                        
+                                        @media only screen and (max-width: 590px) {
+                                            .modal-footer-btn {
+                                                margin: 0 auto;
+                                                width: 100%;
+                                            }
+                                            
+                                            #instruction_tab{
+                                                width: 95% !important;
+                                            }
+                                            
+                                            .instruction_button > a{
+                                                margin-left: 0px !important;
+                                                width: 100% !important;
+                                            }
+                                        }

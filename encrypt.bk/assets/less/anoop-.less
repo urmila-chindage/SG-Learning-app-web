@@ -1,0 +1,1393 @@
+/* Button mixins from bootstrap */
+// .button-size(@padding-vertical; @padding-horizontal; @font-size; @line-height; @border-radius) 
+// .button-variant(@color; @background; @border)
+
+
+/*MIXINS*/
+/*======*/
+    /* General Padding Mixins */
+    .Pad-vert(@pad-vert:@bvl-btn-padding-vertical){
+        padding-top:@pad-vert;
+        padding-bottom:@pad-vert;
+    }
+    
+    .mar-ver0{
+        margin-top:0px;    
+        margin-bottom:0px;    
+    }
+    
+    .pad-right20{
+        padding-right:20px;    
+    }
+    
+    /* General Border Triangle */
+    .Tip-triangle-all(@size;@type;@color){
+        @trans: rgba(0,0,0,0);
+        border-width:@size;
+        border-style:solid;
+        border-color:@trans;
+        border-@{type}-color:@color;
+    }
+    
+    .Cent-align(@width, @height){
+        @width-half:@width/2;
+        @height-half:@height/2;
+        left: ~"calc(50% - @{width-half})";
+        top: ~"calc(50% - @{height-half})";
+    }
+    
+    /* All alignment for checkbox */
+    input[type='checkbox']{
+        .Chk-box(13px); 
+    }
+    
+    .small-font{
+        font-size:@font-small-size;    
+    }
+    
+/*======*/
+/*MIXINS*/
+
+
+/* Bold Font Sizes */ /*START*/
+/*==============*/
+    
+    .font-bold600{
+        font-weight:600;    
+    }
+    
+    .font-bold{
+        font-weight:bold;    
+    }
+    
+/*==============*/
+/* Bold Font Sizes */ /*END*/
+
+
+
+/* Common styles for */
+/* <a class="link"> tag*/
+a.link-style{
+    color:#096cbf !important; 
+    &:hover{
+        color:#096cbf;
+        text-decoration:underline;
+    }
+    
+    //a data with underline
+    &.u-line{
+        text-decoration:underline;
+    }
+}
+
+
+body.body100H{
+    height:100%;
+    .main-content{
+        height:100%;
+    }
+}
+
+.label{
+    padding:.4em 1.2em .5em;
+}
+
+/* italic class */
+.my-italic{
+    font-style:italic;    
+}
+
+/* big-icon */
+.icon-center{
+    font-size: 25px;
+    margin-right: 15px;
+    vertical-align: -5px;
+}
+
+/* common tab color */
+.nav-tabs > li.active > .active-arrow{
+    background:#f6f8fa;
+}
+
+body{
+    background:@cont-color;    
+}
+
+.pos-rel{
+    position:relative;    
+}
+
+.btn{
+    min-width:@btn-min-width;    
+}
+
+.pad-top15{
+    padding-top:@pad-top15;    
+}
+
+.pad-top12{
+    padding-top:@pad-top12;    
+}
+
+.course-container{
+    top:0; 
+    width:100%;
+    padding-right: 0;
+    &.pos-top50{
+        top:50px;    
+    }
+    
+    /* Discussion all from right wrap used here */ /*START*/
+        
+        
+        .discussion-container{
+            span{
+                display:inline-block;    
+            }
+            
+            & .old-chat{
+                .user-date{
+                    display:inline-block;
+                    width: ~"calc(100% - @{chat-box-width-p10})";
+                }    
+            }
+            
+            .box-style{
+                width:@chat-box-width;    
+                height:@chat-box-width;
+                border:2px solid #3b4a59;
+                background:#e8e8e8;
+            }    
+            
+            .user-date{
+                vertical-align:top;
+                padding-left: 15px;
+                .user{
+                    font-weight:600;    
+                }
+                .date{
+                    font-size:13px;
+                    font-style:italic;
+                    color:#949494;
+                }
+            }
+            
+            & > div{
+                padding-top:15px;    
+            }
+            
+            .right-group-wrap{
+                border-bottom: @border-base;
+                padding-bottom:15px;
+                padding-top:15px;
+            }
+            
+            .content-text{
+                color:#656565;
+                font-size:13px;
+            } 
+            
+            a.link-style{
+                color:#0354b9;
+                font-weight:600;
+                font-style:italic;
+            }
+            
+        } 
+        
+    /*END*/
+    
+    
+    
+    &.full-width{
+        width:100%;
+        
+        & .content-wrap{
+            padding-right:0px;
+            
+            & .left-wrap.container{
+                max-width:900px;
+            }
+        }
+        
+    }
+}
+
+
+.label-active{
+    .activeG();
+    margin-left:12px;
+    padding:2px 14px;
+    border-radius:20px;
+    display: inline-block;
+    vertical-align: bottom;
+    
+    &.group-total{
+        vertical-align:initial;
+        margin-right:20px;
+    }
+    
+}
+.label-inactive{
+    .inactiveG();
+    margin-left:12px;
+    padding:2px 14px;
+    border-radius:20px;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+
+/* Fixed element' s fixed sizes */
+header{
+    height:@menu-bar;    
+    top:0px;
+}
+
+.breadcrumb{
+    height:@breadcrumb;    
+    top:@menu-bar;
+    position:fixed;
+    display:block;
+    width:100%;
+    z-index:1001;
+}
+
+
+
+
+/*--------(1)--------*/  /* .base-cont-top tab without heading */ /*START*/
+// base height    
+.base-cont-top{
+    section&.courses-tab{
+        height:@base-nav-height; 
+    }  
+    
+    &.content-wrap{
+        top:@menu-bar + @breadcrumb + @base-nav-height + @nav-tbl-height;
+    }
+    
+    &.right-wrap{
+        @top-right:@menu-bar + @breadcrumb + @base-nav-height;
+        top:@menu-bar + @breadcrumb + @base-nav-height;
+        height: ~"calc( 100% - @{top-right})";
+    }
+    
+    .nav-content{
+        height:@nav-tbl-height;    
+        top:@menu-bar + @breadcrumb + @base-nav-height;
+    }
+}
+/*--------(1)--------*/  /*END*/
+
+/*--------(2)--------*/  /* .base-cont-top tab with heading */ /*START*/
+ 
+ .base-cont-top-heading{
+    section&.courses-tab{
+        height:@base-nav-height-head;
+    }  
+    
+    &.content-wrap{
+        top:@menu-bar + @breadcrumb + @base-nav-height-head;
+    }
+    
+    &.right-wrap{
+        @top-right:@menu-bar + @breadcrumb + @base-nav-height-head;
+        top:@menu-bar + @breadcrumb + @base-nav-height-head;
+        height: ~"calc( 100% - @{top-right})";
+    }
+}
+    
+/*--------(2)--------*/  /*END*/
+
+
+/*--------(3)--------*/  /* .cont-course-big tab with heading */ /*START*/
+
+.cont-course-big{
+    section&.courses-tab{
+        height:@course-heading-height;
+        
+        & h4.margin-sm{
+            padding-left:0px;
+        }
+        
+    }  
+    
+    &.content-wrap{
+        top:@menu-bar + @breadcrumb + @course-heading-height;
+    }
+    
+    &.right-wrap{
+        @top-right:@menu-bar + @breadcrumb + @course-heading-height;
+        top:@menu-bar + @breadcrumb + @course-heading-height;
+        height: ~"calc( 100% - @{top-right})";
+    }
+}
+
+/*--------(3)--------*/  /*END*/
+
+
+
+/*--------(4)--------*/  /* .cont-course-big tab with heading and with another content-nav-tbl also */ /*START*/
+
+.cont-course-big.nav-included{
+    section&.courses-tab{
+        height:@course-heading-height;
+    }  
+    
+    .right-bottom-fixed{
+        position: absolute;
+        bottom: 20px;
+        left: 0px;  
+        & label{
+            font-size:@fixd-bottom-font;
+        }
+    }
+    
+    &.content-wrap{
+        top:@menu-bar + @breadcrumb + @course-heading-height + @nav-tbl-height;
+    }
+    
+    &.right-wrap{
+        @top-right:@menu-bar + @breadcrumb + @course-heading-height;
+        top:@menu-bar + @breadcrumb + @course-heading-height;
+        height: ~"calc( 100% - @{top-right})";
+        padding-top:@nav-tbl-height;
+        padding-bottom:@fixd-bottom-ht + @fixd-bottom-dwn;
+    }
+    &.content-wrap .nav-content{
+        height:@nav-tbl-height;    
+        top:@menu-bar + @breadcrumb + @course-heading-height;
+    }
+}
+
+/*--------(4)--------*/  /*END*/
+
+
+
+
+
+/* Content Wrap All */
+    
+    .content-wrap{
+        position:relative;
+        
+        /* Padding right minus sidebar menu width */
+        padding-right:@rightwrap-width - @padding-left-menu;
+        
+        &.small-width{
+            padding-right:@mini-rightwrap - @padding-left-menu;
+        }
+        
+    }
+/* Content Wrap All */
+
+/* Overwrite Old Layout Styles */
+.dropdown-tigger{
+    font-size:14px;
+    padding:7px 1px;
+    .label-text{
+        padding:7px 2px;
+    }
+}
+
+.headr-menu-rite{
+    list-style:none;    
+}
+
+
+
+.btn.marg10{
+    margin-right:10px;
+    margin-left:10px;
+}
+
+.dropdown{
+    a.dropdown-toggle{
+        display:block;
+        text-decoration:none;
+    }    
+}
+
+
+
+.course-create-wrap{
+    padding-top:10px;
+    font-weight:500;
+    & label{
+        font-size:14px;    
+    }
+    .form-group{
+        padding-top:15px;
+        
+        label{
+            padding-right:10px;    
+        }
+    }
+}
+
+a:hover, a:focus{
+    text-decoration:none;
+    color:@font-prime-color;
+    cursor:pointer;
+}
+
+
+
+
+/* General All */
+
+body{
+    color:@font-base-color;    
+}
+
+.marginT0{
+    margin-top:0;
+}
+
+
+.pad0{
+    padding-right:0px !important;    
+    padding-left:0px !important;    
+}
+.pad-vert0{
+    padding-top:0px !important;        
+    padding-bottom:0px !important;        
+}
+
+.Button-common(){
+    height:@btn-height;
+    line-height:@line-height;
+    font-size:@btn-font-size;
+    font-weight:@btn-font-weight;
+}
+
+/* BASIC PAGE HEADER */
+.courses-tab{
+    position:fixed;
+    z-index:1098;
+    top:80px;
+    width:~"calc(100% - @{padding-right-maincont})";
+    background:@header-tab-color;
+    
+    & ol.nav{
+        
+        & li{
+            padding-top: 5px;
+            padding-bottom: 5px;   
+        }
+    }
+    
+    a{
+        color:@font-prime-color;
+    }
+    h4{
+        padding-left:10px;
+        font-weight:600;
+        margin-bottom:0px;
+    }
+    h4&.margin-sm{
+        padding-left:0px;    
+    }
+}
+
+/* RIGHT DROP DOWN */
+/*=================*/
+
+.lecture-control.btn-right-align{
+    & .dropdown-menu{
+        left:auto;
+        top:115%;
+    }
+    & .dropdown-tigger{
+        padding: 7px 4px;       
+    }
+}
+
+
+/* Page content Section */
+.course-cont-wrap{
+    padding-left:15px;    
+    & .course-cont{
+        & .rTableRow{
+            &:first-child .rTableCell{
+                border-top:0px;    
+            } 
+            
+            /* a content with mail and description example in course-users.html */
+            .wrap-mail{
+                display: inline-block;
+                vertical-align: middle;
+                color:@font-base-color;
+                font-size:12px;
+                & a{
+                    font-size:14px;    
+                }
+            }
+        }
+        
+        
+        
+        & .rTableRow .rTableCell{
+            padding-left:@padding-left - 15px;
+            vertical-align:middle !important;
+            font-size:14px;
+            border-top:1px solid @brdr-clr-light;    
+            padding-top:15px;
+            padding-bottom:15px;
+            &:last-child{
+                padding-left:0px;
+            }
+            
+            & span{
+                
+                i.icon{
+                    font-size:16px;    
+                }
+                
+                &.icon-wrap-round{
+                    i.icon{
+                       font-size:19px;    
+                    }   
+                }
+            }
+            
+            &.td-dropdown{
+                width:53px;   
+            }
+        
+            & a {
+                color:#000;
+                text-decoration:none;
+            }
+            
+            & a.normal-base-color{
+                color:@font-base-color;
+            }
+        }    
+    }
+}
+
+
+.right-wrap {
+    background:@sidebar-color;
+    border-left:@border-base;
+    // border-bottom:@border-base;
+    
+    /* Positioning right of the page */
+    min-height: 326px;
+    width:@rightwrap-width;
+    
+    &.small-width{
+        width:@mini-rightwrap;
+    }
+    
+    position: fixed;
+    right: 0;
+    z-index: 1100;
+    &.new-height104{
+        top:184px;    
+    }
+    
+    &.pos-relative{
+        position:relative !important;  
+        height:100%;
+        z-index:10;
+    }
+}
+
+.left-wrap {
+    background:@cont-color;
+    .icon-wrap-round{
+        
+        margin-right: 10px;
+        margin-left: 10px;
+        font-size:13px;
+        
+        border-radius:50%;
+        color:#fff;
+        height:40px;
+        width:40px;
+        display:inline-block;
+        padding:5px;
+        background:@gen-green-bg;
+        
+        & i.icon{
+            line-height:30px;    
+        }
+    }
+}
+
+
+
+/* Small button mixin */
+.Btn-small(){
+    border:0px;
+    text-transform:initial;
+    padding: @btn-small-padding;
+    font-size:@btn-font-size;
+    font-weight:@btn-font-weight;
+}
+
+.Btn-big(){
+    height:@big-button !important;    
+    line-height:@big-button !important;    
+}
+
+.bdr-rad0{
+    .border-top-radius(0);
+    .border-bottom-radius(0);
+}
+
+// Bevel Button
+
+    // Green Button
+    .btn-green-bvl{
+        .button-variant(@bvl-color; @bvl-green-bg; @bvl-brdr);
+        .box-shadow(@bvl-shadow);
+        .Button-common();
+        padding-top:@bvl-btn-padding-vertical;
+        padding-bottom:@bvl-btn-padding-vertical;
+        border:0px;
+        text-transform:initial;
+    }
+
+// General Button
+    
+    /* Class For Full Width */
+    .full-width-btn{
+        margin-top:10px;
+        margin-bottom:10px;
+        width:100%;
+    }
+    
+    // Big Button
+    .btn-big{
+        .Btn-big();    
+    }
+    
+    // Green Button
+    .btn-green{
+        .button-variant(@gen-color; @gen-green-bg; @gen-brdr);
+        .Pad-vert();
+        .Button-common();
+        border:0px;
+        text-transform:initial;
+    }
+    
+    
+    
+    // Light Green Button
+    .btn-light-green{
+        .button-variant(@gen-color; @gen-light-green; @gen-brdr);
+        .Pad-vert();
+        .Button-common();
+        border:0px;
+        text-transform:initial;
+    }
+    
+    // Red Button
+    .btn-red{
+        .button-variant(@gen-color; @gen-red; @gen-brdr);
+        .Pad-vert();
+        .Button-common();
+        border:0px;
+        text-transform:initial;
+    }
+    
+    // Blue Button
+    .btn-blue{
+        .button-variant(@gen-color; @gen-blue; @gen-brdr);
+        .Pad-vert();
+        .Button-common();
+        border:0px;
+        text-transform:initial;
+    }
+    
+    // Black Button
+    .btn-black{
+        .button-variant(@gen-color; @gen-black; @gen-brdr);
+        .Pad-vert();
+        .Button-common();
+        border:0px;
+        text-transform:initial;
+    }
+    
+    //Orange button
+    .btn-orange{
+        .button-variant(@gen-color; @gen-orange; @gen-brdr);
+        .Pad-vert();
+        .Button-common();
+        border:0px;
+        text-transform:initial;
+    }
+    //Purpler Button 
+    .btn-purple{
+        .button-variant(@gen-color; @gen-purple; @gen-brdr);
+        .Pad-vert();
+        .Button-common();
+        border:0px;
+        text-transform:initial;
+    }
+    
+
+// Small Button types
+    
+    .btn-active{
+        .button-variant(@btn-small-color; @btn-small-active-bg; @btn-small-brdr);
+        .Btn-small();
+    }
+    
+    .btn-inactive{
+        .button-variant(@btn-small-color; @btn-small-inactive-bg; @btn-small-brdr);
+        .Btn-small();
+    }
+    
+    .btn-deleted{
+        .button-variant(@btn-small-color; @btn-small-delete-bg; @btn-small-brdr);
+        .Btn-small();
+    }
+    
+    
+    label[class*="label-"].label{
+        font-weight:normal;    
+    }
+    
+    .spn-active{
+        color:@active-color;
+        font-size:@font-size-spn;
+    }
+    
+    .spn-inactive{
+        color:@inactive-color;
+        font-size:@font-size-spn;
+    }
+    
+    .spn-delete{
+        color:@delete-color;
+        font-size:@font-size-spn;
+    }
+    
+    .spn-create{
+        color:@delete-color;
+        font-size:@font-size-spn;
+    }
+    
+// input style added here
+    .form-group{
+        // Input Addon colors
+        .input-group-addon{
+            background:@in-addon-bg;
+            font-weight:bold;
+            color:@font-base-color;
+            
+            &.light-color{
+                font-weight:normal;
+                color:#9f9f9f;
+            }
+        }
+        
+        
+    }
+    
+    .form-control{
+        input&, select&, textarea& {
+            height:initial;
+            border:1px solid @input-border;
+            padding:@input-pad;
+            background:@input-bg;
+            .form-control-focus(@input-focus-color);
+        }
+    }
+
+
+//Custom list group border to 0;
+    
+    .list-group{
+        &.bdr-rad0 li{
+            .border-top-radius(0);
+            .border-bottom-radius(0);
+            
+        }    
+    }
+    
+    
+    
+
+
+/* CUSTOM STYLE ALL */ /*START*/
+/*=========================*/
+    
+    .dropdown-menu{
+        border-bottom-width:1px;
+        
+        & a:hover, & a:active{
+            color:#bdbdbd !important;
+        }
+    }
+
+    /*  NAV CONTENT STYLE ALL */
+    
+    .nav-content{
+        @right-pad-add : @padding-left-menu + @rightwrap-width;
+        width: ~"calc(100% - @{right-pad-add})";
+        
+        &.nav-cntnt100{
+            width: ~"calc(100% - @{padding-right-maincont})";
+        }
+        
+        .small-width &{
+            @right-pad-add : @padding-left-menu + @mini-rightwrap;
+            width: ~"calc(100% - @{right-pad-add})";
+        }
+        
+        position:relative;
+        border-bottom:1px solid #bcbcbc;
+        z-index:1099;
+        margin-left:0px;
+        background:#fff;
+        position:fixed;
+        .box-shadow(0px 1px 2px rgba(0,0,0,0.2));
+        .col-xs-2{
+            padding-top:8px;
+            padding-bottom:8px;
+        }
+        
+        input{
+            .box-shadow(0px 1px 2px rgba(0,0,0,0.0));    
+        }
+        
+        .dropdown-menu{
+            left:-1px;
+            margin-top:0px;
+        }
+        
+        & input[type="checkbox"]{
+            margin-top:0px;
+            position:relative;
+        }
+        
+        & div[class*="col-xs-"]{
+            border-right:1px solid #bcbcbc;  
+            min-height: 40px;
+        }
+        
+        & .srch_txt{
+            border:0px;
+            border-radius:0px;
+        }
+        
+        
+        & .input-group-addon{
+            background:#fff;
+            border:0px;
+            border-left: 1px solid #bcbcbc;
+            font-size:22px;
+        }
+    }
+    
+    
+    /* Right side Grey wrap */
+    /*=======================*/
+    
+    .bg-grey{
+        background: #656565;
+        padding: 10px 15px;
+        color: #fff;
+        margin-bottom: 10px;
+        color:#fff;
+        label{
+            color:#fff;    
+        }
+    }
+    
+    
+    /* Table style creation */
+    
+    .table-implement{
+        display:table;
+        & > div{
+            display:table-cell;   
+        }
+    }
+    
+    .table-row{
+        display:table-row;    
+    }
+    
+    /* Content tab or nav Set here */
+    
+    
+    .rTable.content-nav-tbl{
+        table-layout: auto;
+        border-collapse: collapse;
+        border:1px solid #bcbcbc;
+        text-align:center;
+        margin-bottom:0px;
+        border-top-width:0px;
+        font-weight:600;
+        border-right:0px;    
+        width:100%;
+        
+        .select-all-style{
+            & label{
+                color:#096cbf; 
+                font-size:13px !important;
+            }    
+            &:hover{
+                label{
+                    color:#096cbf;
+                    text-decoration:underline;
+                }
+            }    
+        }
+        
+        & .rTableRow > .rTableCell{
+            min-height:@cont_height;
+            min-width:@min-width;
+            border-left:1px solid #bcbcbc;
+            vertical-align:middle;
+            padding:0px 0px;
+            font-size:14px;
+            border-top-width:0px;
+            height:0px;
+            
+            &:last-child{
+                border-left:0px;
+                width:120px;
+            }
+            
+            label{
+                font-size:14px;
+                cursor:pointer;
+            }
+            
+            & input.form-control{
+                padding: 12px; 
+                .box-shadow(0px 1px 2px rgba(0,0,0,0.0));
+            }
+            
+            &.dropdown{
+                height:100%;
+                // padding-top:9px;
+                & a{
+                    color:@font-prime-color;
+                    &.dropdown-toggle{
+                        padding-bottom: 9px;
+                        padding-top: 11px;
+                    }
+                }
+                
+                & ul{
+                    background:#fff;
+                    border-radius:0px;
+                    .border-bottom-radius(3px);
+                }
+            }
+        }
+    }
+    
+    .table-view{
+        display:table;
+        .table-cell{
+            display: table-cell;
+            vertical-align: middle;    
+        }
+    }
+    
+    // .content
+    
+    
+    .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus{
+        background:#9e9e9e;
+        border:0px solid #fff;
+    }
+    
+    
+    /* a all hover color */
+    
+    .rTable.content-nav-tbl .rTableRow > .rTableCell.dropdown ul > li > a{
+        &:hover, &:active{
+            color:#fff;    
+        }    
+    }
+    
+    .cert_sett{
+        font-style:italic;
+        margin-left:15px;
+    }
+    
+    /* TABLE LIKE STYLE FOR DIV LIKE ELEMENT */
+    /*=======================================*/
+    
+    .rTable{
+        display: table;
+	    .rTableRow{
+	        display: table-row;
+	        .rTableCell{ display: table-cell; }
+	    }
+    }
+    
+    /*=======================================*/
+    /* TABLE LIKE STYLE FOR DIV LIKE ELEMENT */
+    
+
+/* .card-prieview WRAP*/
+
+.card-prieview{
+    
+    border-radius:@cont-radi;
+    overflow:hidden;
+    .box-shadow(@card-shadow);
+    
+    .heart-icon{
+        position:absolute;
+        color:#3c5a77;
+        top:15px;
+        right:15px;
+        
+        text-shadow: -2px 0 rgba(255, 255, 255, 0.4), 0 2px rgba(255, 255, 255, 0.4), 2px 0px rgba(255, 255, 255, 0.4), 0 -2px rgba(255, 255, 255, 0.4);
+        
+    }
+    
+    .img-chng{
+        background:@img-container-bg;    
+        padding:@padding-size;
+        position:relative;
+        
+        &:hover{
+            cursor:pointer;
+            .pos-abs{
+                .opacity(1); 
+                .transition(opacity 0.2s linear);
+            }
+        }
+        .img-icon-holder{
+            margin:auto;
+            height:@holdr-size;    
+            width:@holdr-size;   
+            background:@img-holder-bg;
+            color:@img-holder-color;
+            border-radius:@radius-circle;
+            text-align:center;
+            overflow:hidden;
+            
+            i{
+                line-height:@holdr-size;
+                font-size:85px;
+            }
+        }
+        button.pos-abs{
+            position:absolute;
+            /* Center align using Calc( width, height ) */
+            .Cent-align(130px, 36px);
+            
+            margin: 0 auto;
+            .opacity(0);
+            
+        }
+    }
+    
+    .img-content{
+        background:#fff;
+        padding:@padding-size + 5px;
+        color:#353535;
+        
+        h4{
+            font-weight:600;
+            font-size:16px;
+        }
+        
+        a.link-style{
+            text-decoration:underline;    
+        }
+        
+        .add-teach{
+            font-style:italic;    
+        }
+        
+        i.icon{
+            margin:0px;    
+        }
+        
+        i.star-active{
+            color:@star-active;    
+        }
+        
+        span[class*="price"]{
+            font-size:14px;
+        }
+        
+        .price{
+            font-weight:600;    
+            color:#52a74e;
+        }
+        .price-bold{
+            // font-weight:200;
+            padding-right:6px;
+            color:#92a1a2;
+            // text-decoration: line-through;
+            position:relative;
+            &.strike-txt{
+                &:after{
+                    content:" ";
+                    width:86%;
+                    position:absolute;
+                    left:0;
+                    border-top:1px solid #92a1a2;
+                    top:50%;
+                }    
+            }
+        }
+        
+    }
+    
+}
+
+.note{
+    margin-top:15px;
+    p{
+        margin-bottom:5px;    
+    }
+}
+
+
+/* Video player button */
+
+.video-player{
+    height:@player-height;
+    max-width:@player-width;
+    text-align:center;
+    background:#232323;
+    cursor:pointer;
+    & i.icon{
+        font-size:45px;
+        color:#d94d38;
+        line-height:@player-height;
+    }
+}
+
+/* Box Display */
+.dsp-box{
+    display:block;
+    height:@dsp-box-size;
+    width:@dsp-box-size;
+    border:4px solid #fff;
+    background:#e8e8e8;
+    text-align:center;
+    color:#959595;
+    font-size:@font-size;
+    float:left;
+    margin-right:10px;
+    cursor:pointer;
+    margin-top: 10px;
+    .box-shadow(@dsp-box-shadow);
+    & span{
+        display: inline-block;    
+        line-height:@dsp-box-size - (@font-size / 2);
+        text-align:center;
+        font-variant: normal;
+    }
+}
+
+/* Course content status */
+h4.course-head{
+    font-size:16px; 
+    font-weight:600;
+    border-bottom:@border-base;
+    padding:10px 0 5px;  
+    
+}
+.course-status-cont{
+    width:100%;
+    
+    padding-left:10px;
+    
+    .rTableCell{
+        min-width:100px;    
+    }
+    
+    .big-head{
+        font-size:30px; 
+        color:#04985b;
+    }    
+    p{
+        font-size:14px;
+        color:#a2a2a2;
+    }
+    
+    /* Media query below min width */
+    @media (max-width:@max-width){
+        & .big-head{
+            font-size:28px;    
+        }   
+        & .rTableCell{
+            min-width:88px;    
+        }
+    }
+    
+}
+
+/* div-list-style */ /*course training*/
+
+@list-style-space:15px;
+@btn-pos:@list-style-space / 2;
+
+.list-style-wrap{
+    padding-left:10px;    
+    padding-right:15px;    
+    width:100%;
+}
+.list-style-div{
+    width:100%;
+    padding:@list-style-space 0px;
+    border-bottom:1px solid @brdr-clr-light;
+    
+    & > .btn{
+        top: ~"-@{btn-pos}";    
+    }
+    
+    & > span{
+        font-style:italic;
+        font-size:15px;
+    }
+    
+    .date-wdth-fxd{
+        min-width: 100px;
+        display: inline-block;    
+    }
+}
+
+
+
+/* Right style for training style */
+
+.right-wrap{
+    
+    &.white-bg{
+        background:#fafafa;    
+    }
+    
+    .heading-right{
+        border-bottom:@border-base;
+        h4{
+            font-size:16px; 
+            font-weight:600;
+        }
+    }
+    
+    .right-cont-style{
+        span{
+            display:inline-block;    
+        }
+        .box-style{
+            width:40px;    
+            height:40px;
+            border:2px solid #3b4a59;
+            background:#e8e8e8;
+        }    
+        
+        .user-date{
+            vertical-align:top;
+            padding-left: 15px;
+            .user{
+                font-weight:600;    
+            }
+            .date{
+                font-size:13px;
+                font-style:italic;
+                color:#949494;
+            }
+        }
+        
+        & > div{
+            padding-top:15px;    
+        }
+        
+        .right-group-wrap{
+            border-bottom: @border-base;
+            padding-bottom:15px;
+            padding-top:15px;
+        }
+        
+        .content-text{
+            color:#656565;
+            font-size:13px;
+        } 
+        
+        a.link-style{
+            color:#0354b9;
+            font-weight:600;
+            font-style:italic;
+        }
+        
+    } 
+    
+    
+    & > .nav-content{
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        
+        & .content-nav-tbl{
+            border-left:0px;    
+        }
+        
+        & .rTableRow > .rTableCell{
+            &:first-child{
+                border-left:0px;
+            }
+            &:last-child{
+                width:initial;
+                border-left:1px solid #bcbcbc;
+            }
+        }
+    }
+    
+}
+
+
+/* Button box switch */
+/*=====================*/
+.padding-right55{
+    padding-right:55px;    
+}
+.btn.box-switch{
+    border-radius:0px !important; 
+    position:relative;
+}
+
+
+/* Progress Bar Settings */
+/*+======================*/
+
+.cent-algn-txt{
+    text-align:center;
+    padding:5px 0px;
+}
+
+.progress{
+    margin-bottom:0px; 
+    &.sml-progress{
+        border:0px;
+        height:6px;
+        box-shadow:none;
+        background-color:#e8e8e8;
+        text-align:center;
+        & .progress-bar{
+            background-color:#ff6000;
+        }
+    }
+}
+
+.button-padR{
+    .btn{
+        margin-right:5px;    
+    }    
+}
+
+.font-20{
+    font-size:20px !important;    
+}
+

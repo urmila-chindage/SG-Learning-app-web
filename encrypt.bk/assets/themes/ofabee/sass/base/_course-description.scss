@@ -1,0 +1,70 @@
+.wrapper{ max-width:954px; width:$fullwidth; margin:0 auto; }
+.course_description{ width:$fullwidth; float:left; border:1px solid #c2c2c2; padding:15px;
+h2{ font-size:20px; color:$gray; margin:0px 0px 20px; }
+.course_description_text{
+h2{ font-size:20px; color:$gray; margin:0px 0px 20px; }
+.user{ width:$fullwidth; float:left; margin-bottom:15px;
+h3{ float:left; font-size:17px; color:#4c4c4c; margin:13px 0px; font-family: 'MontserratLight'; }
+img{ float:left; margin-left:15px; }
+}
+h4{ float:left; font-size:14px; color:#4c4c4c; margin:0px; font-family: 'MontserratLight';
+strong{ font-size:16px; font-family: 'MontserratSemiBold'; }
+}
+a{ width:100%; max-width:84%; font-size:16px; color:#fff; padding:6px 25px 10px; float:left; background:#fe7c00; border-radius:5px; text-align:center; font-family: 'MontserratLight';
+&:hover{ background:#cb6503; }
+}
+}
+.rate{ width: 100%; float: left;
+h2 { width: 100%; float: left; font-size: 21px; line-height: 18px; color: #4c4c4c; font-family: 'MontserratLight';
+span { padding: 0 0 0 12px; text-decoration: line-through; font-size: 16px; }
+}
+}
+.ratting { width: $fullwidth; float: left; margin:10px 0px;
+img { float: left; margin-top: 4px; }
+span { font-size: 14px; color: $gray; float: left; font-family: 'MontserratRegular'; margin-left: 10px; }
+}
+.share{ width:$fullwidth; float:left; margin-top:15px;
+h5{ font-size:12px; color:#4c4c4c; margin:0px 0px 5px; }
+}
+.lectures_list{ width:$fullwidth; float:left; border-top:1px solid #c2c2c2; border-bottom:1px solid #c2c2c2; padding:6px 10px; margin-top:25px;
+ul{ margin:0px; padding:0px;
+li{ width:33.3333%; float:left; margin:0px; padding:0px; font-size:15px; color:#6e6e6e; list-style-type:none; font-family: 'MontserratSemiBold';
+span{ font-size:14px; color:#fe7c00; display:inline-block; padding:0px 10px; }
+}
+}
+}
+.course_text{ width:$fullwidth; float:left;
+h2{ font-size:20px; color:#3e3e3e; margin:35px 0px 15px; }
+h3{ font-size:17px; color:#3e3e3e; margin:15px 0px 15px; }
+p{ font-size:13px; color:#3e3e3e; margin:0px; }
+a{ font-family: 'MontserratSemiBold'; color:#27166e; }
+.section_list{ width:$fullwidth; float:left; border-bottom:1px solid #ccc; margin-bottom:25px;
+ul{ width:$fullwidth; float:left; margin:0px; padding:0px; border-top:1px solid #ccc;
+li{ margin:0px; padding:5px 0px; list-style-type:none; float:left; font-size:16px; color:#3e3e3e; font-family: 'MontserratLight'; }
+li:nth-child(1){ width:60px; text-align:center; }
+li:nth-child(2){ width:20%; }
+li:nth-child(3){ width:57%; }
+}
+}
+.top{ margin-top:-15px; float:left; }
+.reviews_section{ width:$fullwidth; max-width:280px; float:left; background:#f9f9f9; border:1px solid #ccc; border-radius:5px; padding:10px 15px; margin-top:40px;
+h3{ font-size:20px; color:#3e3e3e; margin:0px; }
+h4{ font-size:16px; color:#3e3e3e; margin:0px; }
+.rate { width: $fullwidth; float: left; margin:10px 0px;
+img { float: left; }
+span { font-size:40px; color:$gray; float:left; font-weight:bold; margin-right:10px; line-height:30px; }
+}
+}
+.comment_section{ width:$fullwidth; float:left; padding:20px 0px 5px; border-top:1px solid #ccc; margin-top:25px;
+p{ font-size:15px; color:#3e3e3e; margin:0px; font-family: 'MontserratLight'; }
+.rateImg{ margin:15px 0px 15px; }
+.comment_section_user{ width:$fullwidth; float:left;
+span{ float:left; margin-right:8px; img{ max-width:31px; height:31px; } }
+h3{ font-size:14px; color:#3e3e3e; margin:0px; font-family: 'MontserratLight'; }
+h4{ font-size:12px; color:#3e3e3e; margin:0px; font-family: 'MontserratLight'; }
+}
+}
+}
+}
+.padding_L2{ padding-left:25px; }
+.right_p{ padding-right:15px; }

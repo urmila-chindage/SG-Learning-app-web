@@ -1,0 +1,3 @@
+<?php 
+$lang['teachers'] = 'Teachers';
+?>

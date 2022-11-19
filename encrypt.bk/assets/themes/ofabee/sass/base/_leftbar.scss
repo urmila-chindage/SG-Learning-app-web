@@ -1,0 +1,220 @@
+.sction_1 {
+	width: 100%;
+	float: left;
+	margin: 15px 0px 15px 0px;
+	.s_term {
+		width: 100%;
+		float: left;
+		background: url(../images/sction_1img.jpg) no-repeat;
+		border: 1px solid #c2c2c2;
+		background-size: cover;
+		padding: 20px 0px 15px 0px;
+		display: inline-block;
+		text-align: center;
+		h2 {
+			width: 100%;
+			float: left;
+			font-size: 16px;
+			line-height: 28.17px;
+			color: #3d3d3d;
+			font-family: 'MontserratLight';
+			text-align: center;
+			margin: 0 0 5px;
+			background: url(../images/term.png) no-repeat bottom center;
+			padding-bottom:7px;
+		}
+		h1 {
+			width: 100%;
+			float: left;
+			font-size: 30px;
+			line-height: 28.17px;
+			color: #3d3d3d;
+			font-family: "Lucida Grande";
+			text-align: center;
+			margin: 0;
+			font-weight:normal;
+		}
+		h3 {
+			width: 100%;
+			float: left;
+			font-size: 14px;
+			line-height: 20px;
+			color: #3d3d3d;
+			font-family: 'MontserratLight';
+			text-align: center;
+			margin: 5px 0 0;
+		}
+		a {
+			text-align: center;
+			width: auto;
+			float: none;
+			display: inline-block;
+			color: #fe8000;
+			font-size: 14px;
+			margin-top: 17px;
+			&:hover {
+				color: #3d3d3d;
+			}
+		}
+	}
+	.generate {
+		width: 100%;
+		float: left;
+		margin-top: 10px;
+		.orange{ background:#ff9325; color:#fff; }
+		img{ float:left; }
+		button {
+			width: 100%;
+			float: left;
+			margin-bottom: 10px;
+			font-size: 16px;
+			line-height: 24px;
+			border-radius: 7px;
+			font-family: 'MontserratLight';
+			padding:7px 20px 10px;
+			text-align: center;
+			border: 1px solid #fe8201;
+			color: #fe8201;
+			background-color: #FFF;
+			&:hover {
+				color: #FFF;
+				background: #ff9325;
+				text-decoration: none;
+				-webkit-transition: all .5s ease-in-out;
+				-o-transition: all .5s ease-in-out;
+				transition: all .5s ease-in-out;
+			}
+		}
+		.fa-list-ul {
+			&::before {
+				/*content: "";*/
+				font-size: 22px;
+				padding: 0 24px 0 0;
+			}
+		}
+		.fa-edit {
+			&::before {
+				font-size: 22px;
+				padding: 0 24px 0 0;
+			}
+		}
+	}
+	.s_zone {
+		width: 100%;
+		float: left;
+		border: 1px solid #cdcdcd;
+		border-radius: 7px;
+		h2 {
+			width: 100%;
+			float: left;
+			color: #3e3e3el;
+			line-height: 28.17px;
+			font-size: 16px;
+			padding: 13px 10px 10px 22px;
+			margin: 0;
+
+		}
+		.s_test {
+			width: 100%;
+			float: left;
+			background-color: #edf8ff;
+			border-top: 1px solid #cdcdcd;
+			padding: 22px 22px;
+			border-radius: 0 0 7px 7px;
+			h3 {
+				width: 100%;
+				float: left;
+				color: #3e3e3e;
+				font-size: 14px;
+				line-height: 17px;
+				margin: 0 0 10px;
+				font-family: 'MontserratLight';
+			}
+			a {
+				width: auto;
+				float: left;
+				color: #27166e;
+				font-size: 14px;
+				line-height: 28.17px;
+				font-family: 'MontserratLight';
+				&:hover {
+					color: #ff9325;
+				}
+			}
+			.fa-chevron-right {
+				&::before {
+					padding: 0 0 0 8px;
+					color: #fa9b39;
+					font-size: 16px;
+					position:relative;
+					top:2px;
+				}
+			}
+		}
+	}
+	.s_notification {
+		width: 100%;
+		float: left;
+		border: 1px solid #cdcdcd;
+		border-radius: 7px;
+		margin-top: 15px;
+		h2 {
+			width: 100%;
+			float: left;
+			color: #3e3e3el;
+			line-height: 28.17px;
+			font-size: 16px;
+			padding: 13px 10px 10px 22px;
+			margin: 0;
+			
+		}
+		.sp_text {
+			width: 100%;
+			float: left;
+			background-color: #edf8ff;
+			border-top: 1px solid #cdcdcd;
+			padding: 6px 14px 15px;
+			border-radius: 0 0 7px 7px;
+			p {
+				color: #2e2e2e;
+				font-size: 12px;
+				line-height: 17px;
+				padding: 20px 0 23px;
+				border-bottom: 1px solid #cdcdcd;
+				font-family: 'MontserratLight';
+			}
+			img {
+				width: auto;
+				float: left;
+				padding: 0px 10px 30px 0px;
+			}
+			a {
+				width: auto;
+				float: left;
+				color: #27166e;
+				font-size: 14px;
+				line-height: 28.17px;
+				margin:5px 10px 0px 0px;
+				font-family: 'MontserratLight';
+				&:hover {
+					color: #ff9325;
+				}
+			}
+			.fa-chevron-right {
+				&::before {
+					padding: 0 0 0 8px;
+					color: #fa9b39;
+					font-size: 16px;
+					position:relative;
+					top:2px;
+				}
+			}
+		}
+	}
+}
+.fa-pencil-square-o {
+	&::before {
+		font-size: 22px;
+		padding: 0 24px 0 0;
+	}
+}

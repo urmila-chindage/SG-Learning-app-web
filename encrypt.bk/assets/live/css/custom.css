@@ -1,0 +1,22 @@
+.top-menu-bg{ background-image:url(../images/hdr-repeat.jpg); background-repeat:repeat-x;}
+footer {position: fixed;height: 50px;bottom: 0;width: 100%; background: #B2BEB5;}
+h3{font-weight: bold;}
+td,th{padding: 5px;}
+.text-muted{margin-top: 10px;}
+.row{margin-top: 144px;}
+.list{margin-top: 0px!important;}
+.title,.date,.time{font-size: 18px;}
+.event{font-weight: bold;}
+.join{width: 70px;}
+.head-table{font-weight: bold;}
+.first{text-align: justify;}
+.navbar{border: none!important;}
+a{color:#777777;text-decoration: none;}
+a:hover{text-decoration: none;}
+.count{color:red;}
+.navbar-header{width: 100%;text-align: center;}
+ /* Remove the navbar's default margin-bottom and rounded borders */
+.navbar {margin-bottom: 0;border-radius: 0;}
+.first{border-right: 1px solid #B2BEB5;color: #000;}
+/* Add a gray background color and some padding to the footer */
+body{font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;}

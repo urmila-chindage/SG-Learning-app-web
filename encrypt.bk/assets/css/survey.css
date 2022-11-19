@@ -1,0 +1,218 @@
+/*Survey settings starts here*/
+.survey-wrapper{margin: 0 auto;}
+.survey-row{border-bottom: 1px solid #ccc;padding-top: 35px;}
+.survey-form-flex{display: flex;}
+.survey-title-info{padding-bottom: 50px;}
+.survey-title-info h2{
+	margin: 0;
+    padding: 0px 0 25px 0;
+}
+.survey-title-info .report-response{
+	font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #0023f7;
+}
+.survey-form-flex .ques-no{
+    font-weight: 600;
+    font-size: 17px;
+    color: #288d4f;
+    line-height: 40px;
+}
+.survey-option-wrapper{padding: 15px 0px 0px 80px;user-select: none;}
+.survey-option-wrapper .single-choice-option{
+    width: 20px;
+    height: 20px;
+    border: 2px solid #b6b8b9;
+    border-radius: 50%;
+    margin-top: 10px;
+    float: right;
+}
+.survey-option-wrapper .multiple-choice-option{
+	width: 20px;
+    height: 20px;
+    border: 2px solid #b6b8b9;
+    margin-top: 10px;
+    float: right;
+}
+
+.add-survey-btn{
+    width: 100%;
+    margin: 0;
+    box-shadow: none;
+    border: 1px dashed #a0a0a0;
+    border-radius: 6px;
+    background: #f6f8fa;
+    color: #0023f7;
+    padding: 5px 0;
+    margin: 0px 0px;
+    font-size: 13px;
+}
+.add-survey-btn:focus{background-color: unset;}
+.survey-option-row{display: flex;padding: 0 0;}
+.survey-option-row select{margin-bottom: 10px}
+.survey-option-row textarea{margin-bottom: 10px}
+.remove-survey-option{
+	font-size: 34px;
+    color: #737373;
+    vertical-align: unset;
+    line-height: 32px;
+    cursor: pointer;
+    display: none;
+}
+.survey-option-row:hover .remove-survey-option{display: block;}
+.survey-row input.form-control{padding: 7px 15px;border-radius: 6px;}
+.survey-row input.form-control::placeholder{color: #ccc;}
+.survey-row select{padding: 8px 15px !important;border-radius: 6px !important;}
+.survey-row input{font-size: 16px;}
+.survey-row input::placeholder{color: #444;}
+.survey-row select{font-size: 16px;}
+.surver-actions{border-top: 1px solid #ccc;padding: 15px 0;display: flex;padding: 10px 0;}
+.survey-action-btn{padding: 10px 0px 0px 0px;}
+.survey-action-btn .copy-btn{
+	background: url('../images/copy.svg') no-repeat;
+    width: 20px;
+    height: 25px;
+    display: inline-block;
+    cursor: pointer;
+    margin: 0px 15px;
+}
+.survey-action-btn .edit-btn{    
+  vertical-align: top;
+  font-size: 14px;
+  font-weight: 600;
+  color: #6d6d6d;
+  padding: 0 13px;
+  cursor: pointer;
+}
+.survey-actions{
+	display: flex;
+    border-top: 1px solid #ccc;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+.survey-action-btn .delete-btn{
+	background: url('../images/delete.svg') no-repeat;
+    width: 16px;
+    height: 23px;
+    display: inline-block;
+    cursor: pointer;
+    margin: 0px 15px;
+}
+.survey-ques{
+	font-size: 18px;
+    font-weight: 600;
+    padding-top: 7px;
+}
+.action-col-border{border-right: 1px solid #ccc;}
+
+.required-switch {
+  position: relative;
+  display: inline-block;
+  width: 38px;
+  height: 15px;
+}
+.required-switch-holder{padding-top: 10px;}
+.required-switch input {display:none;}
+.required-switch-holder .toggle-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0px;
+  right: 0;
+  bottom: 0;
+  background-color: #b2b4b5;
+/*  -webkit-transition: .4s;
+  transition: .4s;*/
+}
+.required-switch-holder .toggle-slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 0px;
+  bottom: -2px;
+  background-color: #f1f3f5;
+  box-shadow: 0px 1px 2px 1px #ababab;
+/*  -webkit-transition: .4s;
+  transition: .4s;*/
+}
+.required-switch-holder input:checked + .toggle-slider {
+  background-color: #2196F3;
+}
+.required-switch-holder input:focus + .toggle-slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+.required-switch-holder input:checked + .toggle-slider:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+.survey-ques.mandatory:after{content:' *';color: #c21a1a;}
+.linear-choice-table .from-text,.to-text{background-color: #f6f8fa;}
+.survey-option-row .linear-range-selector{display: inline-block;}
+.survey-option-row .linear-range-selector span{display: inline-block;padding: 0px 10px;}
+.survey-option-row .linear-range-selector select{
+	background: #ffffff;
+    border: none;
+    padding: 5px 10px !important;
+    min-width: 60px;
+}
+.add-btn-wrapper{
+  visibility: visible;
+  padding: 5px 0;
+}
+/* Rounded toggle-sliders */
+.required-switch-holder .toggle-slider.toggle-slider-round {border-radius: 34px;}
+.required-switch-holder .toggle-slider.toggle-slider-round:before {border-radius: 50%;}
+.required-label{
+	font-size: 14px;
+    font-weight: 600;
+    color: #444;
+    padding-right: 10px;
+	vertical-align: text-bottom;	
+}
+.padd-top10{padding-top: 10px;}
+.linear-choice-table{margin: 0 auto; margin-bottom: 15px;}
+.linear-choice-table thead th{font-size: 16px;font-weight: 400;text-align: center;padding: 15px 0px;}
+.linear-choice-table tbody td{padding: 5px 15px 15px 15px;}
+.linear-choice-table tbody tr{background: #f1f3f5; }
+.linear-choice-table tbody tr{vertical-align: bottom;}
+.linear-option-label{font-size: 16px;padding: 10px 0;display: inline-block;}
+
+.survey-row textarea{resize: none;}
+/* no edit settings starts */
+.no-edit input{
+    border: 1px solid #f6f8fa;
+    background: unset;
+    box-shadow: none ;
+    pointer-events: none;
+}
+.survey-row .question-preview{display:none}
+.no-edit textarea{display:none;}
+.no-edit .question-preview{
+    display: block;
+    padding: 8px 12px;
+    min-width: 550px;
+    word-break: break-word;
+}
+
+.no-edit .survey-actions{visibility: hidden;}
+.no-edit:hover .survey-actions{visibility: visible;}
+.no-edit .remove-survey-option{display: none !important;}
+.no-edit .ques-type-selector{display: none !important;}
+.no-edit .add-btn-wrapper{visibility: hidden;}
+.no-edit .linear-range-selector-holder{display: none;}
+.no-edit .required-switch-holder {display:none;}
+.no-edit .action-col-border {
+    border-right:none;
+    padding-top:0px !important;
+    text-align: right;
+    width: 100%;
+}
+.no-edit .survey-save-wrapper{display:none;}
+/* no edit settings ends */
+.add-new-question {
+    margin-top: 20px;
+    padding: 9px 0px;
+}

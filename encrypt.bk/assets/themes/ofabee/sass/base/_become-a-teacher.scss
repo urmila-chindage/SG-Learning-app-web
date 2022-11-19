@@ -1,0 +1,54 @@
+.become_teacher_banner{ width:$fullwidth; float:left; padding:40px 0px; background: url(../images/become-a-teacher-banner.jpg) no-repeat center; -webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size: cover;
+h2{ font-size:32px; color:#fff; margin:0px; font-family: 'MontserratLight'; line-height:42px; }
+h3{ font-size:20px; color:#fff; margin:20px 0px; font-family: 'MontserratLight'; }
+a{ display:inline-block; font-size:16px; color:#fe8201; margin:0px; background:#fff; border-radius:5px; padding:10px 40px; text-transform:uppercase;
+&:hover{ background:rgba(255,255,255,0.7); }
+}
+}
+.benefits_section{ width:$fullwidth; float:left; padding:70px 0px; border-bottom:1px solid #ccc; background: url(../images/become-section.jpg) no-repeat center; -webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size: cover;
+h2{ font-size:20px; color:$gray; margin:0px; text-align:center; }
+.row{ .col-sm-6{ margin:40px 0px 0px;
+h3{ font-size:18px; color:$gray; margin:20px 0px;
+span{ float:left; margin:-10px 15px 0px 0px; }
+}
+p{ font-size:16px; color:$gray; margin:0px; font-family: 'MontserratLight'; }
+}
+}
+}
+.how_it_work{ width:$fullwidth; float:left; padding:60px 0px; background:#fff;
+h2{ font-size:20px; color:$gray; margin:0px; text-align:center; }
+.row{ .col-sm-6{ margin:40px 0px 0px;
+h3{ font-size:18px; color:$gray; margin:20px 0px; }
+p{ font-size:16px; color:$gray; margin:0px; font-family: 'MontserratLight'; }
+.left{ float:left; margin:40px 20px 0px 20px; }
+.right{ float:right; margin:40px 20px 0px 20px; }
+}
+.col-sm-6:nth-child(2){ margin-top:180px; }
+.col-sm-6:nth-child(4){ margin-top:180px; }
+}
+}
+.faq_section{ width:$fullwidth; float:left; padding:60px 0px; background:#fff; text-align:center;
+h2{ font-size:20px; color:$gray; margin:0px; }
+.more{ font-size:20px; color:#3e347b; margin:0px;
+&:hover{ color:#f7a04a; }
+}
+.row{ .col-xs-12{ margin:40px 0px 0px; text-align:left;
+h3{ font-size:18px; color:$gray; margin:20px 0px 5px; }
+p{ font-size:16px; color:$gray; margin:0px 0px 35px; font-family: 'MontserratLight'; }
+}
+}
+}
+.about_teachers{ width:$fullwidth; float:left; padding:60px 0px; background:#fafafa;
+h2{ font-size:20px; color:$gray; margin:0px; text-align:center; }
+.testimonials_users{ width:30%; float:left; text-align:center;
+span{ width:$fullwidth; float:left;
+img{ display:inline-block; float:none; }
+}
+h4{ width:$fullwidth; float:left; font-size:20px; color:#27156e; margin:15px 0px 5px; line-height:22px; text-align:center; font-family: 'MontserratLight'; text-transform:uppercase; }
+p{ width:$fullwidth; float:left; font-size:18px; color:$gray; margin:0px; line-height:18px; text-align:center; font-family: 'MontserratLight'; }
+}
+.testimonial_text{ width:70%; float:left;
+p{ font-size:18px; color:#2a2a2a; font-family:times new roman; margin:15px 0px; }
+h4{ font-size:17px; color:#555; margin:0px; font-family: 'MontserratLight'; font-style:italic; }
+}
+}

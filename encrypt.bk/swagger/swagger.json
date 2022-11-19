@@ -1,0 +1,1919 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "Ofabee APIs",
+		"description": "Get in-depth information about Ofabee rest apis. Authentication, parameters, response formats, and errors - find it all here.",
+		"version": "3.0"
+	},
+	"basePath": "/index.php/",
+	"schemes": [ 
+		"http", "https"
+	],
+	"paths": {
+		"/mobile_api": {
+                    "post": {
+                            "tags": [
+                                    "Authentication apis"
+                            ],
+                            "summary": "Api for Registration",
+                            "description": "",
+                            "operationId": "index",
+                            "consumes": [
+                                    "application/json",
+                                    "application/xml"
+                            ],
+                            "produces": [
+                                    "application/xml",
+                                    "application/json"		
+                            ],
+                            "parameters": [{
+                                    "name": "body",
+                                    "description": "register values",
+                                    "required": true,
+                                    "allowMultiple": false,
+                                    "dataType": "json",
+                                    "paramType": "body",
+                                    "in": "body",
+                                    "default": "{\"header\": {\"method\": \"signup\",\"token\":\"\"},\"body\": {\"name\": \"Kiran JB\",\"phone\": \"9633770528\",\"email\": \"kiran.jb+123@enfintechnologies.com\",\"password\": \"123456ab\",\"hash_key\":\"\"}}"
+                            }],
+                            "responses": {
+                                    "200": {
+                                            "description": "successful operation"
+                                    },
+                                    "400": {
+                                            "description": "Invalid ID supplied"
+                                    },
+                                    "404": {
+                                            "description": "Service list not found"
+                                    }
+                            }
+                    }
+            },
+            "/api/authenticate/login": {
+			"post": {
+				"tags": [
+					"Authentication apis"
+				],
+				"summary": "Api for login",
+				"description": "",
+				"operationId": "index",
+				"consumes": [
+					"application/json",
+					"application/xml"
+				],
+				"produces": [
+					"application/xml",
+					"application/json"
+				],
+				"parameters": [{
+					"name": "body",
+					"description": "User login",
+					"required": true,
+					"allowMultiple": false,
+					"dataType": "json",
+					"paramType": "body",
+					"in": "body",
+					"default": "{\"email\":\"sethu@enfintechnologies.com\",\"password\":\"25dd3b5bdb8f60cb5dbe5b0323b41760f6db21c6\",\"domain_key\":\"1\"}"
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation"
+					},
+					"400": {
+						"description": "Invalid ID supplied"
+					},
+					"404": {
+						"description": "Service list not found"
+					}
+				}
+			}
+		},
+		"/api/authenticate/check_mandatory_fields": {
+			"post": {
+				"tags": [
+					"Authentication apis"
+				],
+				"summary": "Api for mandatory fields",
+				"description": "",
+				"operationId": "index",
+				"consumes": [
+					"application/json",
+					"application/xml"
+				],
+				"produces": [
+					"application/xml",
+					"application/json"
+				],
+				"parameters": [{
+					"name": "body",
+					"description": "User mandatory fields",
+					"required": true,
+					"allowMultiple": false,
+					"dataType": "json",
+					"paramType": "body",
+					"in": "body",
+					"default": "{\"user_id\":\"3\",\"domain_key\":\"1\"}"
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation"
+					},
+					"400": {
+						"description": "Invalid ID supplied"
+					},
+					"404": {
+						"description": "Service list not found"
+					}
+				}
+			}
+		},
+		"/api/authenticate/check_user_profile_status": {
+			"post": {
+				"tags": [
+					"Authentication apis"
+				],
+				"summary": "Api for checking profile completion status",
+				"description": "",
+				"operationId": "index",
+				"consumes": [
+					"application/json",
+					"application/xml"
+				],
+				"produces": [
+					"application/xml",
+					"application/json"
+				],
+				"parameters": [{
+					"name": "body",
+					"description": "User profile completion",
+					"required": true,
+					"allowMultiple": false,
+					"dataType": "json",
+					"paramType": "body",
+					"in": "body",
+					"default": "{\"user_id\":\"3\",\"domain_key\":\"1\"}"
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation"
+					},
+					"400": {
+						"description": "Invalid ID supplied"
+					},
+					"404": {
+						"description": "Service list not found"
+					}
+				}
+			}
+		},
+		"/api/authenticate/fb_login": {
+			"post": {
+				"tags": [
+					"Authentication apis"
+				],
+				"summary": "Api for fb login",
+				"description": "",
+				"operationId": "index",
+				"consumes": [
+					"application/json",
+					"application/xml"
+				],
+				"produces": [
+					"application/xml",
+					"application/json"
+				],
+				"parameters": [{
+					"name": "body",
+					"description": "Fb user login",
+					"required": true,
+					"allowMultiple": false,
+					"dataType": "json",
+					"paramType": "body",
+					"in": "body",
+					"default": "{\"email\":\"admin123@ofabee.com\",\"fullname\":\"admin123\",\"image_url\":\"http://beta.ofabee.com/uploads/beta.ofabee.com/user/d9a41c55170d08e0e996d7b5ad3694b9.jpg\",\"phone_number\":\"1234567890\",\"domain_key\":\"1\"}"
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation"
+					},
+					"400": {
+						"description": "Invalid ID supplied"
+					},
+					"404": {
+						"description": "Service list not found"
+					}
+				}
+			}
+		},
+		"/api/authenticate/forgot": {
+			"post": {
+				"tags": [
+					"Authentication apis"
+				],
+				"summary": "Api for forgot password",
+				"description": "",
+				"operationId": "index",
+				"consumes": [
+					"application/json",
+					"application/xml"
+				],
+				"produces": [
+					"application/xml",
+					"application/json"
+				],
+				"parameters": [{
+					"name": "body",
+					"description": "forgot password",
+					"required": true,
+					"allowMultiple": false,
+					"dataType": "json",
+					"paramType": "body",
+					"in": "body",
+					"default": "{\"email\":\"sethu@enfintechnologies.com\",\"domain_key\":\"1\"}"
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation"
+					},
+					"400": {
+						"description": "Invalid ID supplied"
+					},
+					"404": {
+						"description": "Service list not found"
+					}
+				}
+			}
+		},
+		"/api/authenticate/send_otp": {
+			"post": {
+				"tags": [
+					"Authentication apis"
+				],
+				"summary": "Api for sending OTP",
+				"description": "",
+				"operationId": "index",
+				"consumes": [
+					"application/json",
+					"application/xml"
+				],
+				"produces": [
+					"application/xml",
+					"application/json"
+				],
+				"parameters": [{
+					"name": "body",
+					"description": "Send OTP",
+					"required": true,
+					"allowMultiple": false,
+					"dataType": "json",
+					"paramType": "body",
+					"in": "body",
+					"default": "{\"email\":\"sethu@enfintechnologies.com\",\"domain_key\":\"1\",\"user_id\":\"696\"}"
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation"
+					},
+					"400": {
+						"description": "Invalid ID supplied"
+					},
+					"404": {
+						"description": "Service list not found"
+					}
+				}
+			}
+		},
+		"/api/authenticate/verify_otp": {
+			"post": {
+				"tags": [
+					"Authentication apis"
+				],
+				"summary": "Api for verifying OTP",
+				"description": "",
+				"operationId": "index",
+				"consumes": [
+					"application/json",
+					"application/xml"
+				],
+				"produces": [
+					"application/xml",
+					"application/json"
+				],
+				"parameters": [{
+					"name": "body",
+					"description": "Verify OTP",
+					"required": true,
+					"allowMultiple": false,
+					"dataType": "json",
+					"paramType": "body",
+					"in": "body",
+					"default": "{\"otp_number\":\"675453\",\"user_id\":\"144\",\"domain_key\":\"1\"}"
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation"
+					},
+					"400": {
+						"description": "Invalid ID supplied"
+					},
+					"404": {
+						"description": "Service list not found"
+					}
+				}
+			}
+		},
+		"/api/authenticate/verify_otp": {
+			"post": {
+				"tags": [
+					"Authentication apis"
+				],
+				"summary": "Api for verifying OTP",
+				"description": "",
+				"operationId": "index",
+				"consumes": [
+					"application/json",
+					"application/xml"
+				],
+				"produces": [
+					"application/xml",
+					"application/json"
+				],
+				"parameters": [{
+					"name": "body",
+					"description": "Verify OTP",
+					"required": true,
+					"allowMultiple": false,
+					"dataType": "json",
+					"paramType": "body",
+					"in": "body",
+					"default": "{\"otp_number\":\"675453\",\"user_id\":\"144\",\"domain_key\":\"1\",\"token\":\"\"}"
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation"
+					},
+					"400": {
+						"description": "Invalid ID supplied"
+					},
+					"404": {
+						"description": "Service list not found"
+					}
+				}
+			}
+		},
+		"/api/course/browse_course": {
+			"post": {
+				"tags": [
+					"Course apis"
+				],
+				"summary": "Api for browsing Courses",
+				"description": "",
+				"operationId": "index",
+				"consumes": [
+					"application/json",
+					"application/xml"
+				],
+				"produces": [
+					"application/xml",
+					"application/json"
+				],
+				"parameters": [{
+					"name": "body",
+					"description": "Browse courses",
+					"required": true,
+					"allowMultiple": false,
+					"dataType": "json",
+					"paramType": "body",
+					"in": "body",
+					"default": "{\"category_id\":\"120\",\"limit\":\"10\",\"offset\":\"1\",\"domain_key\":\"1\",\"token\":\"\"}"
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation"
+					},
+					"400": {
+						"description": "Invalid ID supplied"
+					},
+					"404": {
+						"description": "Service list not found"
+					}
+				}
+			}
+		},
+		"/api/course/search_courses": {
+			"post": {
+				"tags": [
+					"Course apis"
+				],
+				"summary": "Api for searching course",
+				"description": "",
+				"operationId": "index",
+				"consumes": [
+					"application/json",
+					"application/xml"
+				],
+				"produces": [
+					"application/xml",
+					"application/json"
+				],
+				"parameters": [{
+					"name": "body",
+					"description": "Search course",
+					"required": true,
+					"allowMultiple": false,
+					"dataType": "json",
+					"paramType": "body",
+					"in": "body",
+					"default": "{\"category_id\":\"120\",\"keyword\":\"problem\",\"user_id\":\"144\",\"limit\":\"2\",\"offset\":\"1\",\"domain_key\":\"1\",\"token\":\"\"}"
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation"
+					},
+					"400": {
+						"description": "Invalid ID supplied"
+					},
+					"404": {
+						"description": "Service list not found"
+					}
+				}
+			}
+		}, 
+		
+		"/api/course/course_description": {
+			"post": {
+				"tags": [
+					"Course apis"
+				],
+				"summary": "Api for getting course description",
+				"description": "",
+				"operationId": "index",
+				"consumes": [
+					"application/json",
+					"application/xml"
+				],
+				"produces": [
+					"application/xml",
+					"application/json"
+				],
+				"parameters": [{
+					"name": "body",
+					"description": "Details of course",
+					"required": true,
+					"allowMultiple": false,
+					"dataType": "json",
+					"paramType": "body",
+					"in": "body",
+					"default": "{ \"course_id\":\"107\",\"domain_key\":\"1\", \"token\":\"\"}"
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation"
+					},
+					"400": {
+						"description": "Invalid ID supplied"
+					},
+					"404": {
+						"description": "Service list not found"
+					}
+				}
+			}
+		}, 
+		
+		"/api/course/get_hash": {
+			"post": {
+				"tags": [
+					"Course apis"
+				],
+				"summary": "Api for getting payment gateway hash",
+				"description": "",
+				"operationId": "index",
+				"consumes": [
+					"application/json",
+					"application/xml"
+				],
+				"produces": [
+					"application/xml",
+					"application/json"
+				],
+				"parameters": [{
+					"name": "body",
+					"description": "Payment gateway hash",
+					"required": true,
+					"allowMultiple": false,
+					"dataType": "json",
+					"paramType": "body",
+					"in": "body",
+					"default": "{ \"course_id\":\"1\",\"user_id\":\"39\",\"domain_key\":\"1\", \"token\":\"\"}"
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation"
+					},
+					"400": {
+						"description": "Invalid ID supplied"
+					},
+					"404": {
+						"description": "Service list not found"
+					}
+				}
+			}
+		},
+		"/api/course/mycourse": {
+			"post": {
+				"tags": [
+					"Course apis"
+				],
+				"summary": "Api for getting details of subscribed courses",
+				"description": "",
+				"operationId": "index",
+				"consumes": [
+					"application/json",
+					"application/xml"
+				],
+				"produces": [
+					"application/xml",
+					"application/json"
+				],
+				"parameters": [{
+					"name": "body",
+					"description": "Details of subscribed courses",
+					"required": true,
+					"allowMultiple": false,
+					"dataType": "json",
+					"paramType": "body",
+					"in": "body",
+					"default": "{\"user_id\":\"144\",\"domain_key\":\"1\",\"token\":\"\"}"
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation"
+					},
+					"400": {
+						"description": "Invalid ID supplied"
+					},
+					"404": {
+						"description": "Service list not found"
+					}
+				}
+			}
+		},
+		"/api/course/course_curriculum": {
+			"post": {
+				"tags": [
+					"Course apis"
+				],
+				"summary": "Api for getting details of subscribed courses",
+				"description": "",
+				"operationId": "index",
+				"consumes": [
+					"application/json",
+					"application/xml"
+				],
+				"produces": [
+					"application/xml",
+					"application/json"
+				],
+				"parameters": [{
+					"name": "body",
+					"description": "Details of subscribed courses",
+					"required": true,
+					"allowMultiple": false,
+					"dataType": "json",
+					"paramType": "body",
+					"in": "body",
+					"default": "{\"course_id\":\"158\",\"user_id\":\"144\",\"domain_key\":\"1\",\"token\":\" \"}"
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation"
+					},
+					"400": {
+						"description": "Invalid ID supplied"
+					},
+					"404": {
+						"description": "Service list not found"
+					}
+				}
+			}
+		},
+		
+		"/api/course/get_discussions": {
+			"post": {
+				"tags": [
+					"Course apis"
+				],
+				"summary": "Api for getting discussion details",
+				"description": "",
+				"operationId": "index",
+				"consumes": [
+					"application/json",
+					"application/xml"
+				],
+				"produces": [
+					"application/xml",
+					"application/json"
+				],
+				"parameters": [{
+					"name": "body",
+					"description": "To get the discussion details of a particular course",
+					"required": true,
+					"allowMultiple": false,
+					"dataType": "json",
+					"paramType": "body",
+					"in": "body",
+					"default": "{\"user_id\":\"144\",\"course_id\":\"140\",\"offset\":\"1\",\"limit\":\"5\",\"domain_key\":\"1\",\"token\":\"\"}"
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation"
+					},
+					"400": {
+						"description": "Invalid ID supplied"
+					},
+					"404": {
+						"description": "Service list not found"
+					}
+				}
+			}
+		},
+		"/api/course/load_child_comments": {
+			"post": {
+				"tags": [
+					"Course apis"
+				],
+				"summary": "Api for getting discussion details",
+				"description": "",
+				"operationId": "index",
+				"consumes": [
+					"application/json",
+					"application/xml"
+				],
+				"produces": [
+					"application/xml",
+					"application/json"
+				],
+				"parameters": [{
+					"name": "body",
+					"description": "To get the discussion details of a particular course",
+					"required": true,
+					"allowMultiple": false,
+					"dataType": "json",
+					"paramType": "body",
+					"in": "body",
+					"default": "{\"user_id\":\"144\",\"course_id\":\"140\",\"discussion_id\":\"140\",\"offset\":\"1\",\"limit\":\"5\",\"domain_key\":\"1\",\"token\":\"\"}"
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation"
+					},
+					"400": {
+						"description": "Invalid ID supplied"
+					},
+					"404": {
+						"description": "Service list not found"
+					}
+				}
+			}
+		},
+		"/api/course/create_new_discussion": {
+			"post": {
+				"tags": [
+					"Course apis"
+				],
+				"summary": "Api for creating new discussion",
+				"description": "",
+				"operationId": "index",
+				"consumes": [
+					"application/json",
+					"application/xml"
+				],
+				"produces": [
+					"application/xml",
+					"application/json"
+				],
+				"parameters": [{
+					"name": "body",
+					"description": "To create a new discussion",
+					"required": true,
+					"allowMultiple": false,
+					"dataType": "json",
+					"paramType": "body",
+					"in": "body",
+					"default": "{\"user_id\":\"144\",\"course_id\":\"140\",\"comment_title\":\"testing titlesss\",\"comment\":\"commentss test\",\"domain_key\":\"1\",\"token\":\"\"}"
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation"
+					},
+					"400": {
+						"description": "Invalid ID supplied"
+					},
+					"404": {
+						"description": "Service list not found"
+					}
+				}
+			}
+		},
+		"/api/course/post_user_comment": {
+			"post": {
+				"tags": [
+					"Course apis"
+				],
+				"summary": "Api for posting a new comment",
+				"description": "",
+				"operationId": "index",
+				"consumes": [
+					"application/json",
+					"application/xml"
+				],
+				"produces": [
+					"application/xml",
+					"application/json"
+				],
+				"parameters": [{
+					"name": "body",
+					"description": "To post a new comment",
+					"required": true,
+					"allowMultiple": false,
+					"dataType": "json",
+					"paramType": "body",
+					"in": "body",
+					"default": "{\"user_id\":\"144\",\"course_id\":\"140\",\"comment_id\":\"225\",\"comment\":\"test sub comments\",\"domain_key\":\"1\",\"token\":\"\"}"
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation"
+					},
+					"400": {
+						"description": "Invalid ID supplied"
+					},
+					"404": {
+						"description": "Service list not found"
+					}
+				}
+			}
+		},
+		"/api/course/assessment_results": {
+			"post": {
+				"tags": [
+					"Course apis"
+				],
+				"summary": "Api for listing assessments results",
+				"description": "",
+				"operationId": "index",
+				"consumes": [
+					"application/json",
+					"application/xml"
+				],
+				"produces": [
+					"application/xml",
+					"application/json"
+				],
+				"parameters": [{
+					"name": "body",
+					"description": "To list the assessments results",
+					"required": true,
+					"allowMultiple": false,
+					"dataType": "json",
+					"paramType": "body",
+					"in": "body",
+					"default": "{\"user_id\":\"144\",\"course_id\":\"140\",\"offset\":\"1\",\"limit\":\"5\",\"domain_key\":\"1\",\"token\":\"\"}"
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation"
+					},
+					"400": {
+						"description": "Invalid ID supplied"
+					},
+					"404": {
+						"description": "Service list not found"
+					}
+				}
+			}
+		},
+		
+		"/api/course/get_single_assessment_details": {
+			"post": {
+				"tags": [
+					"Course apis"
+				],
+				"summary": "Api for getting details of a single assessment",
+				"description": "",
+				"operationId": "index",
+				"consumes": [
+					"application/json",
+					"application/xml"
+				],
+				"produces": [
+					"application/xml",
+					"application/json"
+				],
+				"parameters": [{
+					"name": "body",
+					"description": "To get the details of single assessment",
+					"required": true,
+					"allowMultiple": false,
+					"dataType": "json",
+					"paramType": "body",
+					"in": "body",
+					"default": "{\"attempt_id\":\"1612\",\"user_id\":\"144\",\"domain_key\":\"1\",\"token\":\"\"}"
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation"
+					},
+					"400": {
+						"description": "Invalid ID supplied"
+					},
+					"404": {
+						"description": "Service list not found"
+					}
+				}
+			}
+		},
+		"/api/course/my_wishlist": {
+			"post": {
+				"tags": [
+					"Course apis"
+				],
+				"summary": "Api for getting wishlist courses",
+				"description": "",
+				"operationId": "index",
+				"consumes": [
+					"application/json",
+					"application/xml"
+				],
+				"produces": [
+					"application/xml",
+					"application/json"
+				],
+				"parameters": [{
+					"name": "body",
+					"description": "To get wishlist courses",
+					"required": true,
+					"allowMultiple": false,
+					"dataType": "json",
+					"paramType": "body",
+					"in": "body",
+					"default": "{\"user_id\":\"144\",\"offset\":\"1\",\"limit\":\"5\",\"domain_key\":\"1\",\"token\":\"\"}"
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation"
+					},
+					"400": {
+						"description": "Invalid ID supplied"
+					},
+					"404": {
+						"description": "Service list not found"
+					}
+				}
+			}
+		},
+		"/api/course/challenge_zone_results": {
+			"post": {
+				"tags": [
+					"Course apis"
+				],
+				"summary": "Api for getting details of challenge zones",
+				"description": "",
+				"operationId": "index",
+				"consumes": [
+					"application/json",
+					"application/xml"
+				],
+				"produces": [
+					"application/xml",
+					"application/json"
+				],
+				"parameters": [{
+					"name": "body",
+					"description": "To get the details of challenge zones",
+					"required": true,
+					"allowMultiple": false,
+					"dataType": "json",
+					"paramType": "body",
+					"in": "body",
+					"default": "{\"user_id\":\"144\",\"offset\":\"1\",\"domain_key\":\"1\",\"token\":\"\"}"
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation"
+					},
+					"400": {
+						"description": "Invalid ID supplied"
+					},
+					"404": {
+						"description": "Service list not found"
+					}
+				}
+			}
+		}, 
+		
+		
+		
+		
+		"/api/course/save_challenge": {
+			"post": {
+				"tags": [
+					"Course apis"
+				],
+				"summary": "Api for save the challenge zone",
+				"description": "",
+				"operationId": "index",
+				"consumes": [
+					"application/json",
+					"application/xml"
+				],
+				"produces": [
+					"application/xml",
+					"application/json"
+				],
+				"parameters": [{
+					"name": "body",
+					"description": "To save details/results of a challenge zone",
+					"required": true,
+					"allowMultiple": false,
+					"dataType": "json",
+					"paramType": "body",
+					"in": "body",
+					"default": "{\"challenge_id\":\"100\",\"answers\":{\"1927\":\"7516\",\"1928\":\"7521\"},\"answer_time_log\":{\"1927\":\"11\",\"1928\":\"2\"}, \"time_taken\":\"60\", \"user_id\":\"144\",\"domain_key\":\"1\",\"token\":\"\"}"
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation"
+					},
+					"400": {
+						"description": "Invalid ID supplied"
+					},
+					"404": {
+						"description": "Service list not found"
+					}
+				}
+			}
+		},
+		"/api/course/course_reviews": {
+			"post": {
+				"tags": [
+					"Course apis"
+				],
+				"summary": "Api to fetch reviews",
+				"description": "",
+				"operationId": "index",
+				"consumes": [
+					"application/json",
+					"application/xml"
+				],
+				"produces": [
+					"application/xml",
+					"application/json"
+				],
+				"parameters": [{
+					"name": "body",
+					"description": "Fetch Reviews",
+					"required": true,
+					"allowMultiple": false,
+					"dataType": "json",
+					"paramType": "body",
+					"in": "body",
+					"default": "{\"course_id\":\"1\",\"offset\":\"2\"}"
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation"
+					},
+					"400": {
+						"description": "Invalid ID supplied"
+					},
+					"404": {
+						"description": "Service list not found"
+					}
+				}
+			}
+		},
+		"/api/course/add_remove_wishlist": {
+			"post": {
+				"tags": [
+					"Course apis"
+				],
+				"summary": "Api to fetch reviews",
+				"description": "",
+				"operationId": "index",
+				"consumes": [
+					"application/json",
+					"application/xml"
+				],
+				"produces": [
+					"application/xml",
+					"application/json"
+				],
+				"parameters": [{
+					"name": "body",
+					"description": "Fetch Reviews",
+					"required": true,
+					"allowMultiple": false,
+					"dataType": "json",
+					"paramType": "body",
+					"in": "body",
+					"default": "{\"course_id\":\"1\",\"status\":\"1\",\"user_id\":\"144\",\"domain_key\":\"1\",\"token\":\"\"}"
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation"
+					},
+					"400": {
+						"description": "Invalid ID supplied"
+					},
+					"404": {
+						"description": "Service list not found"
+					}
+				}
+			}
+		},
+
+		"/api/course/download_lecture": {
+			"post": {
+				"tags": [
+					"Course apis"
+				],
+				"summary": "Api to download lecture",
+				"description": "",
+				"operationId": "index",
+				"consumes": [
+					"application/json",
+					"application/xml"
+				],
+				"produces": [
+					"application/xml",
+					"application/json"
+				],
+				"parameters": [{
+					"name": "body",
+					"description": "Download lecture",
+					"required": true,
+					"allowMultiple": false,
+					"dataType": "json",
+					"paramType": "body",
+					"in": "body",
+					"default": "{\"lecture_id\":\"1\",\"user_id\":\"144\",\"domain_key\":\"1\",\"token\":\"\"}"
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation"
+					},
+					"400": {
+						"description": "Invalid ID supplied"
+					},
+					"404": {
+						"description": "Service list not found"
+					}
+				}
+			}
+		},
+
+		"/api/course/download_lecture_confirmed": {
+			"post": {
+				"tags": [
+					"Course apis"
+				],
+				"summary": "Api to download lecture file",
+				"description": "",
+				"operationId": "index",
+				"consumes": [
+					"application/json",
+					"application/xml"
+				],
+				"produces": [
+					"application/xml",
+					"application/json"
+				],
+				"parameters": [{
+					"name": "body",
+					"description": "Download lecture file",
+					"required": true,
+					"allowMultiple": false,
+					"dataType": "json",
+					"paramType": "body",
+					"in": "body",
+					"default": "{\"lecture_id\":\"1\",\"user_id\":\"144\",\"domain_key\":\"1\",\"token\":\"\"}"
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation"
+					},
+					"400": {
+						"description": "Invalid ID supplied"
+					},
+					"404": {
+						"description": "Service list not found"
+					}
+				}
+			}
+		},
+
+		"/api/course/delete_course_discussion": {
+			"post": {
+				"tags": [
+					"Course apis"
+				],
+				"summary": "Api to delete course discussion comment",
+				"description": "",
+				"operationId": "index",
+				"consumes": [
+					"application/json",
+					"application/xml"
+				],
+				"produces": [
+					"application/xml",
+					"application/json"
+				],
+				"parameters": [{
+					"name": "body",
+					"description": "Delete comment",
+					"required": true,
+					"allowMultiple": false,
+					"dataType": "json",
+					"paramType": "body", 
+					"in": "body",
+					"default": "{\"comment_id\":\"242\",\"user_id\":\"144\",\"domain_key\":\"1\",\"token\":\"\"}"
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation"
+					},
+					"400": {
+						"description": "Invalid ID supplied"
+					},
+					"404": {
+						"description": "Service list not found"
+					}
+				}
+			}
+		},
+
+		"/api/course/report_course_discussion": {
+			"post": {
+				"tags": [
+					"Course apis"
+				],
+				"summary": "Api to report course discussion comment",
+				"description": "",
+				"operationId": "index",
+				"consumes": [
+					"application/json",
+					"application/xml" 
+				],
+				"produces": [
+					"application/xml",
+					"application/json"
+				],
+				"parameters": [{
+					"name": "body",
+					"description": "Report comment",
+					"required": true,
+					"allowMultiple": false,
+					"dataType": "json",
+					"paramType": "body", 
+					"in": "body",
+					"default": "{\"comment_id\":\"242\",\"user_id\":\"144\",\"reason\":\"dont like\",\"domain_key\":\"1\",\"token\":\"\"}"
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation"
+					},
+					"400": {
+						"description": "Invalid ID supplied"
+					},
+					"404": {
+						"description": "Service list not found"
+					}
+				}
+			}
+		},
+
+				"/api/course/get_lecture": {
+			"post": {
+				"tags": [
+					"Course apis"
+				],
+				"summary": "Api to get lecture details",
+				"description": "",
+				"operationId": "index",
+				"consumes": [
+					"application/json",
+					"application/xml" 
+				],
+				"produces": [ 
+					"application/xml",
+					"application/json"
+				],
+				"parameters": [{
+					"name": "body", 
+					"description": "Get Lecture", 
+					"required": true,
+					"allowMultiple": false,
+					"dataType": "json",
+					"paramType": "body", 
+					"in": "body", 
+					"default": "{\"user_id\":\"144\",\"lecture_id\":\"936\",\"course_id\":\"140\",\"domain_key\":\"1\",\"token\":\"\"}"
+
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation"
+					},
+					"400": {
+						"description": "Invalid ID supplied"
+					},
+					"404": {
+						"description": "Service list not found" 
+					}
+				}
+			}
+		},
+
+		"/api/course/save_lecture_percentage": {
+			"post": {
+				"tags": [
+					"Course apis"
+				],
+				"summary": "Api to save lecture percentage",
+				"description": "",
+				"operationId": "index",
+				"consumes": [
+					"application/json", 
+					"application/xml" 
+				],
+				"produces": [ 
+					"application/xml",
+					"application/json"
+				],
+				"parameters": [{
+					"name": "body", 
+					"description": "Save lecture percentage", 
+					"required": true,
+					"allowMultiple": false,
+					"dataType": "json",
+					"paramType": "body", 
+					"in": "body", 
+					"default": "{\"user_id\":\"144\",\"lecture_id\":\"936\",\"percentage\":\"90\",\"domain_key\":\"1\",\"token\":\"\"}"
+
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation"
+					},
+					"400": {
+						"description": "Invalid ID supplied"
+					},
+					"404": {
+						"description": "Service list not found" 
+					}
+				}
+			}
+		},
+
+		"/api/course/save_descriptive_question_comment": {
+			"post": {
+				"tags": [
+					"Course apis"
+				],
+				"summary": "Api to save decriptive question comment",
+				"description": "",
+				"operationId": "index",
+				"consumes": [
+					"application/json", 
+					"application/xml" 
+				],
+				"produces": [ 
+					"application/xml",
+					"application/json"
+				],
+				"parameters": [{
+					"name": "body", 
+					"description": "Save descriptive question comment", 
+					"required": true,
+					"allowMultiple": false,
+					"dataType": "json",
+					"paramType": "body", 
+					"in": "body", 
+					"default": "{\"user_id\":\"144\",\"lecture_id\":\"987\",\"comment\":\"test comment by ses\",\"domain_key\":\"1\",\"token\":\"\"}"
+
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation"
+					},
+					"400": {
+						"description": "Invalid ID supplied"
+					},
+					"404": {
+						"description": "Service list not found" 
+					}
+				}
+			}
+		},
+
+		"/api/course/delete_descriptive_question_comment": {
+			"post": {
+				"tags": [
+					"Course apis"
+				],
+				"summary": "Api to delete decriptive question comment",
+				"description": "",
+				"operationId": "index",
+				"consumes": [
+					"application/json", 
+					"application/xml" 
+				],
+				"produces": [ 
+					"application/xml",
+					"application/json"
+				],
+				"parameters": [{
+					"name": "body", 
+					"description": "Delete descriptive question comment", 
+					"required": true,
+					"allowMultiple": false,
+					"dataType": "json",
+					"paramType": "body", 
+					"in": "body", 
+					"default": "{\"user_id\":\"144\",\"comment_id\":\"743\",\"domain_key\":\"1\",\"token\":\"\"}"
+
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation"
+					},
+					"400": {
+						"description": "Invalid ID supplied"
+					},
+					"404": {
+						"description": "Service list not found" 
+					}
+				}
+			}
+		},
+
+		"/api/course/save_user_assesment": {
+			"post": {
+				"tags": [
+					"Course apis"
+				],
+				"summary": "Api for saving the assessment details",
+				"description": "",
+				"operationId": "index",
+				"consumes": [
+					"application/json",
+					"application/xml"
+				],
+				"produces": [
+					"application/xml",
+					"application/json"
+				],
+				"parameters": [{
+					"name": "body",
+					"description": "To save the assessment details and get results",
+					"required": true,
+					"allowMultiple": false,
+					"dataType": "json",
+					"paramType": "body",
+					"in": "body",
+					"default": "{\"domain_key\":\"1\",\"user_id\":\"144\",\"assessment_id\":\"96\",\"time_taken\":\"98\", \"answers\":{ \"1897\":\"7397\",\"1898\":\"7402\"} ,\"answer_time_log\":{\"1897\":\"11\",\"1898\":\"2\"},\"token\":\"\"}"
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation"
+					},
+					"400": {
+						"description": "Invalid ID supplied"
+					},
+					"404": {
+						"description": "Service list not found"
+					}
+				}
+			}
+		},
+
+		"/api/course/get_assessment_details": {
+			"post": {
+				"tags": [
+					"Course apis"
+				],
+				"summary": "Api to get details of a assessment",
+				"description": "",
+				"operationId": "index",
+				"consumes": [
+					"application/json",
+					"application/xml"
+				],
+				"produces": [
+					"application/xml",
+					"application/json"
+				],
+				"parameters": [{
+					"name": "body",
+					"description": "To get the details of assessment",
+					"required": true,
+					"allowMultiple": false,
+					"dataType": "json",
+					"paramType": "body",
+					"in": "body",
+					"default": "{\"attempt_id\":\"3341\",\"user_id\":\"144\",\"domain_key\":\"1\",\"token\":\"\"}"
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation"
+					},
+					"400": {
+						"description": "Invalid ID supplied"
+					},
+					"404": {
+						"description": "Service list not found"
+					}
+				}
+			}
+		},
+
+		
+
+		"/api/course/get_curriculum_questions": {
+			"post": {
+				"tags": [
+					"Course apis"
+				],
+				"summary": "Api for getting details of assesment questions",
+				"description": "",
+				"operationId": "index",
+				"consumes": [
+					"application/json",
+					"application/xml"
+				],
+				"produces": [
+					"application/xml",
+					"application/json"
+				],
+				"parameters": [{
+					"name": "body",
+					"description": "Details of assesment questions",
+					"required": true,
+					"allowMultiple": false,
+					"dataType": "json",
+					"paramType": "body",
+					"in": "body",
+					"default": "{\"course_id\":\"140\",\"lecture_id\":\"892\",\"user_id\":\"144\",\"domain_key\":\"1\",\"token\":\" \"}"
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation"
+					},
+					"400": {
+						"description": "Invalid ID supplied"
+					},
+					"404": {
+						"description": "Service list not found"
+					}
+				}
+			}
+		},
+
+		
+
+		"/api/course/list_all_categories": {
+			"post": {
+				"tags": [
+					"Course apis"
+				],
+				"summary": "Api for listing categories",
+				"description": "",
+				"operationId": "index",
+				"consumes": [
+					"application/json",
+					"application/xml"
+				],
+				"produces": [
+					"application/xml",
+					"application/json"
+				],
+				"parameters": [{
+					"name": "body",
+					"description": "To list categories",
+					"required": true,
+					"allowMultiple": false,
+					"dataType": "json",
+					"paramType": "body",
+					"in": "body",
+					"default": "{\"user_id\":\"144\",\"domain_key\":\"1\",\"token\":\"\"}"
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation"
+					},
+					"400": {
+						"description": "Invalid ID supplied"
+					},
+					"404": {
+						"description": "Service list not found"
+					}
+				}
+			}
+		},
+
+		
+		"/api/course/edit_user_profile": {
+			"post": {
+				"tags": [
+					"Course apis"
+				],
+				"summary": "Api for edit user profile",
+				"description": "",
+				"operationId": "index",
+				"consumes": [
+					"application/json",
+					"application/xml"
+				],
+				"produces": [
+					"application/xml",
+					"application/json"
+				],
+				"parameters": [{
+					"name": "body",
+					"description": "To edit user profile",
+					"required": true,
+					"allowMultiple": false, 
+					"dataType": "json",
+					"paramType": "body", 
+					"in": "body",
+					"default": "{\"user_id\":\"144\",\"user_name\":\"Sethu\",\"user_bio\":\"sample bio\",\"domain_key\":\"1\",\"token\":\"\"}"
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation"
+					},
+					"400": {
+						"description": "Invalid ID supplied"
+					},
+					"404": {
+						"description": "Service list not found"
+					}
+				}
+			}
+		},
+	
+	"/api/profile/change_profile_image": {
+      "post": {
+        "tags": [
+          "Profile apis"
+        ],
+        "summary": "Api for change profile image ",
+				"description": "",
+				"operationId": "index",
+				"consumes": [
+					"application/json",
+					"application/xml"
+				],
+		"produces": [
+			"application/xml",
+			"application/json"
+				],
+        "parameters": [
+			{
+				"name": "file",
+	           "in": "formData",
+	           "description": "file to upload",
+	           "required": false,
+	           "type": "file"
+			},
+          {
+            "name": "body",
+            "in": "formData",
+            "description": "Registration request",
+            "required": true,
+            
+			"default": "{\"user_id\":\"144\",\"domain_key\":\"1\",\"token\":\"\"}"        
+		  }
+        ],
+        "responses": {
+          "200": {
+            "description": "Returns success message",
+            "schema": {
+              "$ref": "#/definitions/ErrorModel"
+            },
+            "examples": {
+			 "application/json": {
+			   "success": 1,
+				"message": "Account activation link has been send to your email id"
+			 }
+			}
+          },
+          "default": {
+		   "description": "Unexpected error",
+		   "schema": {
+              "$ref": "#/definitions/ErrorModel"
+            },
+            "examples": {
+			 "application/json": {
+			 	"success": 0,
+			 	"message": "Email id not available."
+			 }
+			}
+		 }
+        }
+      }
+    },
+  
+
+    "/api/course/get_challenge_zone_questions": {
+			"post": {
+				"tags": [
+					"Course apis"
+				],
+				"summary": "Api to get challenge zone questions",
+				"description": "",
+				"operationId": "index",
+				"consumes": [
+					"application/json",
+					"application/xml"
+				],
+				"produces": [
+					"application/xml",
+					"application/json"
+				],
+				"parameters": [{
+					"name": "body",
+					"description": "To get challenge zone questions",
+					"required": true,
+					"allowMultiple": false,
+					"dataType": "json",
+					"paramType": "body",
+					"in": "body",
+					"default": "{\"user_id\":\"144\",\"challenge_id\":\"85\",\"domain_key\":\"1\",\"token\":\"\"}"
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation"
+					},
+					"400": {
+						"description": "Invalid ID supplied"
+					},
+					"404": {
+						"description": "Service list not found"
+					}
+				}
+			}
+		},
+
+		"/api/course/delete_course_discussion_comment": {
+			"post": {
+				"tags": [
+					"Course apis"
+				],
+				"summary": "Api to delete course discussion comment",
+				"description": "",
+				"operationId": "index",
+				"consumes": [
+					"application/json", 
+					"application/xml" 
+				],
+				"produces": [ 
+					"application/xml",
+					"application/json"
+				],
+				"parameters": [{
+					"name": "body", 
+					"description": "Delete delete course discussion comment", 
+					"required": true,
+					"allowMultiple": false,
+					"dataType": "json", 
+					"paramType": "body", 
+					"in": "body", 
+					"default": "{\"user_id\":\"144\",\"comment_id\":\"215\",\"domain_key\":\"1\",\"token\":\"\"}"
+
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation"
+					},
+					"400": {
+						"description": "Invalid ID supplied"
+					},
+					"404": {
+						"description": "Service list not found" 
+					}
+				}
+			}
+		},
+
+
+		"/api/course/report_course_discussion_comment": {
+			"post": {
+				"tags": [
+					"Course apis"
+				],
+				"summary": "Api to report course discussion comment",
+				"description": "",
+				"operationId": "index",
+				"consumes": [
+					"application/json", 
+					"application/xml" 
+				],
+				"produces": [ 
+					"application/xml",
+					"application/json"
+				],
+				"parameters": [{
+					"name": "body", 
+					"description": "Report course discussion comment", 
+					"required": true,
+					"allowMultiple": false,
+					"dataType": "json", 
+					"paramType": "body", 
+					"in": "body", 
+					"default": "{\"user_id\":\"144\",\"comment_id\":\"215\",  \"reason\":\"dont like\",\"domain_key\":\"1\",\"token\":\"\"}"
+
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation"
+					},
+					"400": {
+						"description": "Invalid ID supplied"
+					},
+					"404": {
+						"description": "Service list not found" 
+					}
+				}
+			}
+		},
+
+		
+
+		"/api/course/subscribe_free_lecture": {
+			"post": {
+				"tags": [
+					"Course apis"
+				],
+				"summary": "Api to subscribe free lecture",
+				"description": "",
+				"operationId": "index",
+				"consumes": [
+					"application/json", 
+					"application/xml" 
+				],
+				"produces": [ 
+					"application/xml",
+					"application/json"
+				],
+				"parameters": [{
+					"name": "body", 
+					"description": "Api to subscribe free lecture ", 
+					"required": true,
+					"allowMultiple": false,
+					"dataType": "json", 
+					"paramType": "body",  
+					"in": "body", 
+					"default": "{\"user_id\":\"144\",\"course_id\":\"135\", \"domain_key\":\"1\",\"token\":\"\"}"
+
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation"
+					},
+					"400": {
+						"description": "Invalid ID supplied"
+					},
+					"404": {
+						"description": "Service list not found" 
+					}
+				}
+			}
+		},
+
+		"/api/course/save_rating_review": {
+			"post": {
+				"tags": [
+					"Course apis"
+				],
+				"summary": "Api to save rating",
+				"description": "",
+				"operationId": "index",
+				"consumes": [
+					"application/json", 
+					"application/xml" 
+				],
+				"produces": [ 
+					"application/xml",
+					"application/json"
+				],
+				"parameters": [{
+					"name": "body", 
+					"description": "Api to save user rating ", 
+					"required": true,
+					"allowMultiple": false,
+					"dataType": "json", 
+					"paramType": "body",  
+					"in": "body", 
+					"default": "{\"user_id\":\"682\",\"course_id\":\"107\",\"rating\":\"3\",\"review\":\"nice course\", \"domain_key\":\"1\",\"token\":\"\"}"
+
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation"
+					},
+					"400": {
+						"description": "Invalid ID supplied"
+					},
+					"404": {
+						"description": "Service list not found" 
+					}
+				}
+			}
+		},
+
+		"/api/course/wishlist_search": {
+			"post": {
+				"tags": [
+					"Course apis"
+				],
+				"summary": "Api for getting wishlist courses",
+				"description": "",
+				"operationId": "index",
+				"consumes": [
+					"application/json",
+					"application/xml"
+				],
+				"produces": [
+					"application/xml",
+					"application/json"
+				],
+				"parameters": [{
+					"name": "body",
+					"description": "To get wishlist courses",
+					"required": true,
+					"allowMultiple": false,
+					"dataType": "json",
+					"paramType": "body",
+					"in": "body",
+					"default": "{\"user_id\":\"144\",\"search_key\":\"ma\",\"offset\":\"1\",\"limit\":\"5\",\"domain_key\":\"1\",\"token\":\"\"}"
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation"
+					},
+					"400": {
+						"description": "Invalid ID supplied"
+					},
+					"404": {
+						"description": "Service list not found"
+					}
+				}
+			}
+		},
+
+		"/api/course/save_payment_details": {
+			"post": {
+				"tags": [
+					"Course apis"
+				],
+				"summary": "Api to save course payment details",
+				"description": "",
+				"operationId": "index",
+				"consumes": [
+					"application/json", 
+					"application/xml" 
+				],
+				"produces": [ 
+					"application/xml",
+					"application/json"
+				],
+				"parameters": [{
+					"name": "body", 
+					"description": "Api to save course payment details ", 
+					"required": true,
+					"allowMultiple": false,
+					"dataType": "json", 
+					"paramType": "body",  
+					"in": "body", 
+					"default": "{\"user_id\":\"144\",\"course_id\":\"135\",\"course_amount\":\"1500\", \"domain_key\":\"1\",\"token\":\"\"}"
+
+				}],
+				"responses": {
+					"200": {
+						"description": "successful operation"
+					},
+					"400": {
+						"description": "Invalid ID supplied"
+					},
+					"404": {
+						"description": "Service list not found" 
+					}
+				}
+			}
+		}
+
+		
+	
+	}
+}

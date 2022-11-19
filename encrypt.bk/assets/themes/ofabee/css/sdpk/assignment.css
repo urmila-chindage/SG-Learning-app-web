@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #f9f9f9 !important;
+    font-family: 'Open Sans', sans-serif !important;
+    overflow-x: hidden !important;
+}
+button.btn:focus {
+    outline: none;
+}
+.assignment-wrapper{ padding: 0 90px;}
+.assignment-wrapper .assignment-title{margin: 0;padding: 30px 20px;font-size: 32px;}
+.assignment-col{padding: 0 20px;margin-bottom: 40px;}
+.assignment-wrapper .assignment-box-content{
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+.assignment-wrapper .assignment-box-content:hover {box-shadow: 0px 2px 6px #ccc;transition: 0.2s;}
+.assignment-wrapper .assignment-ques-info .assignment-date-info p{    
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: #e97b56;
+}
+
+.assignment-wrapper .assignment-ques-info{
+    padding: 25px 25px 15px 25px;
+    border-bottom: 1px solid #ececec;
+}
+.assignment-wrapper .assignment-tags{
+    display: flex;
+    padding: 15px 25px;
+    border-bottom: 1px solid #ececec;
+}
+
+/*.assignment-wrapper .assignment-info-col{width: 33.33%;}*/
+.width-50{width: 50%;}
+.width-25{width: 25%;}
+.assignment-wrapper .assignment-question{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #444;
+    display: inline-flex;
+    margin: 0;
+}
+.assignment-wrapper .assignment-question:before{
+    content: "";
+    width: 18px;
+    height: 29px;
+    background: url("../img/assign-icon.png");
+    background-repeat: no-repeat;
+    background-position-y: 5px;
+    display: inline-block;
+    padding-right: 30px;
+}
+.submited-title{font-size: 13px;font-weight: 400;}
+.grade-info{
+    text-align: center;
+    display: inline-block;
+}
+.assignment-wrapper .submition-date{
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #e97b56;
+    line-height: 25px;
+}
+.assignment-wrapper .marks-scored{
+    display: inherit;
+    color: #02a5f0;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 25px;
+}
+.assignment-wrapper .grade-scored{
+    display: block;
+    color: #29da00;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 25px;
+}
+.assignment-wrapper .view-feedback.report-icn:before {
+    content: "";
+    height: 10px;
+    background: url(../img/quiz_report.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    padding-right: 25px;
+}
+.submition-info{display: inline-block;text-align: center;}
+.assignment-wrapper .view-feedback{color: #02a5f0}
+.assignment-wrapper .view-feedback:hover{text-decoration: none;}
+.assignment-wrapper .awaiting-result{color: #e97b56}
+.assignment-wrapper .awaiting-result:hover{text-decoration: none;}
+.assignment-wrapper .assignment-info-col{padding:0 !important;}
+.assignment-wrapper .assignment-view-info{display: flex;padding: 15px 25px;}
+.assignment-wrapper .assignment-view-info .option-tag{padding: 0;}
+.assignment-wrapper .read-instruct{color: #29da00;font-size: 14px;font-weight: 400;cursor: pointer;}
+.assignment-wrapper .submit-assignment-btn{padding: 10px 15px;}
+.assignment-wrapper .submit-assignment-btn-disabled{padding: 10px 15px;color: #fff;}
+.marks-scored-title{font-size: 13px;}
+.marks-title{font-size: 13px;}
+.time-expired{color: #e97b56;}
+
+@media only screen and (max-width:480px) {
+    .assignment-col {
+        padding: 0 0px;
+        margin-bottom: 15px;
+    }   
+    .assignment-wrapper .assignment-title {display: none}
+}
+
+@media (max-width:1200px){
+    .assignment-wrapper {padding: 0px;}
+}
+
+@media (max-width:992px){
+    .assignment-wrapper .assignment-ques-info {
+        padding: 20px 15px 15px 15px;
+        border-bottom: 1px solid #ccc;
+    }
+    .assignment-wrapper .submit-assignment-btn {padding: 10px 6px;font-size: 11px;}
+    .assignment-wrapper .submit-assignment-btn-disabled {padding: 10px 6px;font-size: 11px;}
+    .assignment-wrapper .marks-scored-title {font-size: 12px;}
+    .assignment-wrapper .grade-title{font-size: 12px;}
+    .submited-title {font-size: 12px;font-weight: 400;}
+    .assignment-wrapper .assignment-tags {display: flex;padding: 15px 15px;border-bottom: 1px solid #ccc;}
+    .assignment-wrapper .assignment-view-info {display: flex;padding: 15px 15px;}
+    .assignment-wrapper .view-feedback {color: #02a5f0;font-size: 13px;}
+    .assignment-wrapper .read-instruct {color: #29da00;font-size: 13px;font-weight: 600;cursor: pointer;}
+}

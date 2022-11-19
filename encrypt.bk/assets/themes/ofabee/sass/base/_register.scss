@@ -1,0 +1,22 @@
+.register_main{ width:$fullwidth; float:left; text-align:center; margin:15px 0px; border-top:1px solid #ddd; padding-top:15px;
+.register{ width:$fullwidth; max-width:940px; display:inline-block; border:1px solid #c2c2c2; text-align:left; background:url(../images/registerimg.png) no-repeat top center #fff;
+h2{ width:$fullwidth; float:left; border-bottom:1px solid #c2c2c2; font-size:18px; color:#575757; margin:0px; padding:22px 70px; }
+.form_main{ width:$fullwidth; min-height:500px; float:left; padding:20px 70px;
+.brd{ border-left:1px solid #c2c2c2; }
+h3{ width:$fullwidth; float:left; font-size:20px; color:#2e2e2e; margin:0px; padding:40px 0px 70px; font-family: 'MontserratRegular'; }
+h4{ font-size:18px; color:#3d3d3d; margin:0px; font-family: 'MontserratLight'; text-align:left; }
+.buttons_main{ width:$fullwidth; float:left; margin-top:20px; }
+h5{ font-size:18px; color:#3d3d3d; margin:0px 0px 15px; font-family: 'MontserratLight'; }
+a{ width:$fullwidth; max-width:60%; float:left; font-size:16px; color:#fff; margin:0px; font-family: 'MontserratLight'; background:#ff9325; padding:7px 40px; text-transform:uppercase; border-radius:4px; text-align:center; 
+&:hover{ opacity:0.8; } }
+.fb{ background:url(../images/facebook.png) no-repeat 35px center #3b5998; text-transform:lowercase; }
+.account_main{ width:$fullwidth; max-width:280px; display:inline-block;
+h4{ margin-bottom:50px; }
+input{ width:$fullwidth; float:left; border:1px solid #ccc; padding:7px 10px; font-size:15px; color:#444; margin-bottom:15px; }
+.captcha{ widht:$fullwidth; float:left; margin-bottom:15px; }
+a{ width:$fullwidth; max-width:60%; float:left; font-size:16px; color:#fff; margin:0px; font-family: 'MontserratLight'; background:#ff9325; padding:10px 50px; text-transform:uppercase; border-radius:4px; text-align:center; 
+&:hover{ opacity:0.8; } }
+}
+}
+}
+}

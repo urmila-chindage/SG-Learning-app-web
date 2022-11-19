@@ -1,0 +1,517 @@
+.no-padding {
+    padding: 0;
+}
+
+.dash-stud-profile-wrapper p {
+    margin: 0;
+    font-weight: 400;
+}
+
+.dash-stud-profile-wrapper {
+    margin-top: 100px;
+    padding: 0 20px;
+}
+
+.stud-profile-col {
+    background: #fff;
+    display: flex;
+    box-shadow: 0px 2px 2px 0px #e8e8e8;
+    margin-bottom: 30px;
+}
+
+.stud-profile-col .avatar-info {
+    position: relative;
+    padding: 0 0 0 45px;
+}
+
+.profile-avatar {
+    position: absolute;
+    top: -60px;
+    border: 3px solid #64277d;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 248px;
+    height: 250px;
+}
+
+.stud-name {
+    position: absolute;
+    top: -40px;
+}
+
+.stud-name h4 {
+    font-size: 26px;
+    font-weight: 600;
+    color: #215aad;
+    text-align: left;
+    margin: 0;
+}
+
+.profile-info-wrapper {
+    padding: 0 40px;
+}
+
+.profile-info {
+    padding: 25px 0;
+}
+
+.profile-info p {
+    margin: 0;
+    line-height: 24px;
+}
+
+.joined-info {
+    width: 95px;
+    height: 95px;
+    background: #02a5f0;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    position: absolute;
+    top: 140px;
+    left: 50%;
+    transform: translate(-25%);
+}
+
+.joined-info span {
+    font-size: 11px;
+    font-weight: 400;
+    color: #fff;
+    padding-top: 28px;
+    display: inline-block;
+}
+
+.score-col .score-col-title {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.score-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-top: 1px solid #ccc;
+    border-right: 0;
+    border-left: 0;
+    /* background: url('../img/score-point-bg.png');
+    background-size: cover;
+    background-position-x: 70px; */
+}
+
+.grade-col {
+    padding: 0px 0 0px 60px;
+}
+
+.grade-col .grade {
+    font-size: 42px;
+    font-weight: 800;
+    color: #2bd906;
+}
+
+.grade-col p {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.view-grade {
+    padding: 10px 0 15px 0;
+}
+
+.view-grade a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #02a5f0;
+}
+
+.view-grade:before {
+    content: "";
+    height: 9px;
+    background: url(../img/quiz_report.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    padding-right: 24px;
+    cursor: pointer;
+}
+
+.score-points-col {
+    padding: 10px 40px 10px 10px;
+    text-align: left;
+}
+
+.score-points-col .score-count {
+    font-size: 36px;
+    font-weight: 600;
+    color: #02a5f0;
+    display: grid;
+    text-align: center;
+}
+
+.score-points-col p {
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.dash-event-tags {
+    display: flex;
+    background: #fff;
+    box-shadow: 0px 2px 2px 0px #e8e8e8;
+    border-radius: 0px 3px 3px 0px;
+    margin-bottom: 10px;
+}
+
+.event-col {
+    min-width: 80px;
+    max-width: 80px;
+    background: #293952;
+    text-align: center;
+    border-radius: 3px 0 0 3px;
+    padding: 12px 0px;
+}
+
+.event-col.red-bg {
+    background: #e74242;
+}
+
+.event-col .date {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 200;
+    line-height: 25px;
+    margin: 0;
+}
+
+.event-col .month {
+    color: #fff;
+    font-weight: 600;
+}
+
+.event-info {
+    padding: 10px 15px;
+}
+
+.event-info a {
+    font-weight: 600;
+    line-height: 22px;
+    text-decoration: none;
+    color: #444;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    width: 100%;
+}
+
+/*================*/
+
+.course-card-horizontal {
+    display: inline-block;
+    width: 100%;
+}
+
+.course-card-horizontal .course-card-wrapper{cursor: pointer;}
+
+.course-card-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 130px;
+    background: #fff;
+    box-shadow: 0px 2px 2px 0px #e8e8e8;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+}
+
+.course-block-left {
+    padding: 0;
+    width: 200px;
+}
+
+.course-block-right {
+    padding: 0 15px;
+}
+
+.course-block-right .star-ratings-sprite {
+    display: inline-block !important;
+}
+
+.course-block-right a {
+    text-decoration: none;
+}
+
+.course-block-right .progress_main {
+    width: 100%;
+    display: flex;
+    height: 15px;
+}
+
+.course-block-right .progress-precentage {
+    position: relative;
+    top: -8px;
+    margin-left: 10px;
+    color: #444;
+}
+
+.course-card-title {
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2;
+    -moz-line-clamp: 2;
+    -ms-line-clamp: 2;
+    -o-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -ms-box-orient: vertical;
+    -o-box-orient: vertical;
+    box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 15px;
+    color: #29303b;
+    margin-bottom: 5px;
+    cursor: pointer;
+    height: 42px;
+}
+
+
+
+.card-grade-col {
+    padding: 30px 0px;
+    text-align: center;
+}
+
+.card-grade-col .grade-on-card {
+    font-size: 28px;
+    font-weight: 800;
+    color: #2bd906;
+}
+
+.card-grade-col p {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.course-card-wrapper:hover {
+    background: #242424;
+}
+
+.course-card-wrapper:hover .course-card-title {
+    color: #fff;
+}
+
+.course-card-wrapper:hover .sub-head-des {
+    color: #fff;
+}
+
+.course-card-wrapper:hover .card-grade-col p {
+    color: #fff;
+}
+
+.course-card-wrapper:hover .progress-precentage {
+    color: #fff;
+}
+
+.course-status {
+    color: #39aa4a;
+    display: inline;
+    padding-left: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    vertical-align: top;
+    font-style: normal;
+}
+
+.red-text {
+    color: #f55853;
+}
+
+.course-block-right .sub-head-des {
+    height: 28px;
+    font-size: 13px;
+}
+
+/*==============*/
+
+.custom-calendar {
+    margin-top: 30px;
+}
+
+@media (max-width:1200px) {
+    .dash-stud-profile-wrapper {
+        padding: 0px;
+    }
+}
+
+@media (max-width:992px) {
+    .profile-avatar {
+        position: relative;
+        top: -60px;
+    }
+    .profile-info-wrapper {
+        width: 100%;
+    }
+    .custom-calendar {
+        display: none;
+    }
+    
+}
+@media (max-width:1200px){
+    .profile-avatar {
+        
+        width: 200px;
+        height: 200px;
+    }
+    .joined-info{
+        top: 90px;
+    }
+}
+
+@media (max-width:768px) {
+    .profile-info {padding: 25px 5px;}
+    .dash-stud-profile-wrapper {
+        padding: 0px;
+        margin-top: 270px;
+        margin-bottom: 20px;
+    }
+    .profile-left-wrapper{margin-bottom: 20px;}
+    .course-block-right{
+        padding-right: 0;
+        width: calc(100% - 100px);
+    }
+    .card-grade-col{display: none;}
+    .course-card-title{font-size: 13px;}
+    .dash-stud-profile-wrapper .profile-left-wrapper {
+        padding: 0px
+    }
+    .dash-stud-profile-wrapper .event-right-wrapper {
+        padding-bottom: 15px;
+    }
+    .stud-profile-col {
+        flex-direction: column;
+        padding: 0 15px;
+    }
+    .stud-profile-col .avatar-info {
+        padding: 0px;
+    }
+    .profile-info-wrapper {
+        padding: 0px;
+    }
+    .profile-avatar {
+        position: absolute;
+        bottom: 60px;
+    }
+    .joined-info {
+        position: absolute;
+        top: -135px;
+        left: calc(50% + 20px);
+    }
+    .profile-avatar {
+        position: absolute;
+        top: -250px;
+        width: 100%;
+    }
+    .profile-avatar img {
+        margin: 0 auto;
+        width: 185px;
+        height: 185px;
+    }
+    .stud-name {
+        width: 100%;
+    }
+    .stud-name h4 {
+        text-align: center;
+    }
+    .grade-col {
+        width: 50%;
+        text-align: center;
+    }
+    .score-points-col {
+        width: 50%;
+    }
+    .score-wrapper {
+        background: none;
+    }
+    .custom-calendar {
+        display: none;
+    }
+    .profile-avatar {
+        border: none;
+        border-radius: 0px;
+        width: 100%;
+        height: 250px;
+    }
+    .profile-avatar img{    
+        border: 3px solid #64277d;
+        border-radius: 50%;
+    }
+    .course-card-wrapper {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 100%;
+        height: 120px;
+        background: #fff;
+        box-shadow: 0px 2px 2px 0px #e8e8e8;
+        padding: 10px 10px;
+        margin-bottom: 10px;
+    }
+    .dash-stud-profile-wrapper .course-block-right .sub-head-des{
+        height: 23px;
+        display: none;
+    }
+    .course-block-right .progress_main{
+        height: 10px;
+    }
+}
+
+@media (max-width:580px) {
+    .custom-calendar {
+        display: none;
+    }
+    .profile-avatar {
+        border: none;
+        border-radius: 0px;
+        width: 100%;
+        height: 250px;
+    }
+    .profile-avatar img{    
+        border: 3px solid #64277d;
+        border-radius: 50%;
+    }
+}
+
+@media (max-width:480px) {
+    .joined-info {
+        position: absolute;
+        top: -135px;
+        left: calc(50% + 20px);
+    }
+    .custom-calendar {
+        display: none;
+    }
+    .profile-avatar {
+        border: none;
+        border-radius: 0px;
+        width: 100%;
+        height: 250px;
+    }
+    .profile-avatar img{    
+        border: 3px solid #64277d;
+        border-radius: 50%;
+    }
+    .course-block-right .star-ratings-sprite-block{margin-top: -5px;}
+    .course-block-right .course-status{
+        padding-left: 0px;
+        padding: 0px 0px;
+        width: 100%;
+        font-size: 12px;
+        margin-top: -10px;
+        text-align: right;
+    }
+    .course-block-right .card-grade-col .grade-on-card{font-size: 22px;}
+    .course-block-right .card-grade-col p{font-size: 12px;}
+    .course-block-right .sub-head-des {height: 20px;}
+     .course-block-right .progress_main{height: 15px;}
+
+}

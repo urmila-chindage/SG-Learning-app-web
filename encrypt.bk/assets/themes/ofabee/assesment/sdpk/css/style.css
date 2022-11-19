@@ -1,0 +1,407 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #f9f9f9 !important;
+    font-family: 'Open Sans', sans-serif !important;
+    overflow-x: hidden !important;
+}
+button.btn:focus {
+    outline: none;
+}
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: 1010px;
+    margin: 0 auto;
+}
+.timeline-banner{ 
+    background: url(../img/quiz-banner.png) no-repeat;
+    background-position-x: center;
+    height: 60px;
+    position: relative;
+    z-index: 9;
+    top: 30px;
+    margin-bottom: 70px;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: #e97b56;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
+}
+/* timeline-container around content */
+.timeline-container {
+    padding: 10px 35px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+    top: 30px;
+    margin-bottom: 25px;
+}
+
+/* The circles on the timeline */
+.timeline-container::after {
+    content: '';
+    position: absolute;
+    width: 23px;
+    height: 31px;
+    right: -11px;
+    background: #f9f9f9 url(../img/milestone.svg);
+    background-repeat: no-repeat;
+    top: 20px;
+    z-index: 1;
+}
+.timeline-container .red{
+    color: #e97b56;
+}
+.timeline-container .green{
+    color: #48c466;
+}
+.timeline-container .blue{
+    color: #04a6f1;
+}
+/* Place the timeline-container to the left */
+.left {
+    left: 0;
+}
+
+/* Place the timeline-container to the right */
+.right {
+    left: 50%;
+}
+
+/* Add arrows to the left timeline-container (pointing right) */
+.timeline-content-left::before {
+    content: " ";
+    height: 10px;
+    position: absolute;
+    top: 20px;
+    width: 10px;
+    z-index: 1;
+    transform: rotate(45deg);
+    right: -5px;
+    background: #fff;
+    border: 1px solid #ccc;
+    /* border-width: 5px 0 5px 15px; */
+    border-color: #ccc #ccc #ff000000 #ccc0;
+}
+
+/* Add arrows to the right timeline-container (pointing left) */
+.timeline-content-right::before {
+    content: " ";
+    height: 10px;
+    position: absolute;
+    top: 20px;
+    width: 10px;
+    z-index: 1;
+    transform: rotate(225deg);
+    left: -5px;
+    border: 1px solid #ccc;
+    background: #fff;
+    border-color: #ccc #ccc #ff000000 #ccc0;
+}
+
+/* Fix the circle for timeline-containers on the right side */
+.right::after {
+    left: -12px;
+}
+
+/* The actual content */
+.timeline-content {
+    padding: 25px 25px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+.section-title{
+    background: #f9f9f9;
+    padding-bottom: 0px;
+    position: relative;
+    z-index: 9;
+    text-align: center;
+}
+.title-margin-top{margin-top: 65px;}
+.section-title h2{
+    background: #e97b56;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 7px 12px;
+    border-radius: 4px;
+    display: inline-block;
+    position: relative;
+    margin: 5px 0;
+}
+.quiz-title{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #444;
+    display: inline-flex;
+    margin: 0;
+}
+.quiz-title:before{
+    content: "";
+    width: 18px;
+    height: 29px;
+    background: url("../img/lightning.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    padding-right: 35px;
+}
+.quiz-tags{
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 15px 0;
+}
+.quiz-tags .quiz-info-col{
+    width: 33.33%;
+}
+.quiz-tags .ques-tag-info{
+    font-size: 22px;
+    font-weight: 600;
+    color: #04a6f1;
+}
+.quiz-tags .ques-tag-title{
+    font-size: 13px;
+    font-weight: 600;
+    color: #444;
+    padding-left: 5px;
+}
+.quiz-option-tags{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.quiz-option-tags .option-tag{width: 50%;}
+.ques-option-info{
+    font-size: 14px;
+    color: #04a6f1;
+    vertical-align: -webkit-baseline-middle;
+}
+.ques-option-info.red:hover{text-decoration: none;color: #e97b56}
+.ques-option-info:hover{text-decoration: none; color:#04a6f1; }
+.ques-option-info.report-icn:before{
+    content: "";
+    height: 10px;
+    background: url(../img/quiz_report.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    padding-right: 30px;
+}
+.attend-btn{
+    background: #48c466;
+    color: #fff;
+    padding: 3px 14px !important;
+    border-radius: 5px !important;
+    letter-spacing: 1px;
+}
+.attend-btn:hover{background: #3da256}
+.attend-btn-disabled{
+    background: #dedcdd;
+    color: #fff;
+    padding: 3px 14px !important;
+    border-radius: 5px !important;
+    letter-spacing: 1px;
+}
+.attend-btn,.attend-btn-disabled:hover{color: #fff !important;}
+/*score board starts here*/
+.score-board{
+    height: 100%;
+    position: absolute;
+    right: -100%;
+    width: 100%;
+    top: 0;
+    box-sizing: border-box;
+    padding: 10px 35px;
+}
+.score-board-left{left: -100%;}
+.score-board-info{
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 45px 20px;
+}
+.score-info{}
+.width-40{width:40%;}
+.width-20{width:20%;}
+.score-board-info-sm{display: none;} /*not visible for large devices*/
+.score-info h5{
+    font-size: 34px;
+    font-weight: 600;
+    margin: 0;
+}
+.score-board-info.score-info{
+    width: 33.33%;
+}
+.score-info-label{
+    font-size: 14px;
+    font-weight: 600;
+    color: #444;
+}
+.date-view{
+    top: 10px;
+    position: relative;
+}
+.date-view p{
+    background: #b1b0ac;
+    padding: 4px 12px;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 14px;
+    display: inline-block;
+}
+.date-view.date-right:before{
+    content: " ";
+    height: 8px;
+    position: absolute;
+    top: 10px;
+    width: 8px;
+    z-index: 1;
+    transform: rotate(225deg);
+    left: -3px;
+    border: 1px solid #b1b0ac;
+    background: #b1b0ac;
+    border-color: #b1b0ac #b1b0ac #ff000000 #b1b0ac;
+}
+.date-view.date-left{}
+.date-view.date-left:before{
+    content: " ";
+    height: 8px;
+    position: absolute;
+    top: 10px;
+    width: 8px;
+    z-index: 1;
+    transform: rotate(45deg);
+    right: -3px;
+    border: 1px solid #b1b0ac;
+    background: #b1b0ac;
+    border-color: #b1b0ac #b1b0ac #ff000000 #b1b0ac;
+}
+.date-view-sm-only p{display: none;}
+/*score board starts ends here*/
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 760px) {
+  .section-title{text-align: left;padding: 0 10px;}
+  /* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+  /* Full-width timeline-containers */
+  .timeline-container {
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 15px;
+  }
+  /* Make sure that all arrows are pointing leftwards */
+  .timeline-container::before {
+    content: " ";
+    height: 10px;
+    position: absolute;
+    top: 30px;
+    width: 10px;
+    z-index: 1;
+    transform: rotate(225deg);
+    left: 56px;
+    border: 1px solid #ccc;
+    background: #fff;
+    border-color: #ccc #ccc #ff000000 #ccc0;
+    display: none;
+  }
+  .timeline-content{padding: 20px 20px;}
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 19px;
+  }
+  /* Make all right timeline-containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+  .quiz-tags{border-bottom: 1px solid #dcdcdc;}
+  .quiz-option-tags {padding-top: 15px;}
+  /*.quiz-title{font-size: 12px;}*/
+  .quiz-title:before {background-size: 16px;padding-right: 25px;}
+  .quiz-tags .ques-tag-info {font-size: 18px;}
+  .quiz-tags .ques-tag-title {font-size: 14px;font-weight: 600;}
+  .score-board-info-sm{
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 15px 0px;
+    border-bottom: 1px solid #dcdcdc;
+  }
+  .score-board-info-sm.score-info{
+    width: 33.33%;
+  }
+  .score-info h5 {font-size: 26px;font-weight: 600;}
+  .score-info-label{font-size: 14px;font-weight: 600;}
+  .score-board{display: none;}
+  .date-view-sm-only p{font-weight: 600;font-size:16px;text-align: center;padding-bottom: 15px;display: block;margin: 0;}
+  .ques-option-info{font-size: 16px;}
+  .timeline-banner{margin-bottom:60px;}
+
+  .timeline-content-left::before, .timeline-content-right::before{
+    content: " ";
+    height: 10px;
+    position: absolute;
+    top: 20px;
+    width: 10px;
+    z-index: 0;
+    transform: rotate(225deg);
+    left: -5px;
+    border: 1px solid #ccc;
+    background: #fff;
+    border-color: #ccc #ccc #ff000000 #ccc0;
+  }
+  .timeline-banner {
+    background-size: 280px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+    .date-view-sm-only p {
+        font-weight: 600;
+        font-size: 14px;
+    }
+    .quiz-title {
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .quiz-tags .ques-tag-info {
+        font-size: 15px;
+    }
+    .quiz-tags .ques-tag-title {
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .ques-option-info {
+        font-size: 14px;
+    }
+    .score-info h5 {
+        font-size: 21px;
+        font-weight: 600;
+    }
+    .score-info-label {
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .timeline-content-left::before, .timeline-content-right::before {
+        content: " ";
+        height: 12px;
+        position: absolute;
+        top: 18px;
+        width: 12px;
+        z-index: 0;
+        transform: rotate(225deg);
+        left: -6px;
+    }
+    .timeline-content .attend-btn,.attend-btn-disabled {margin-top: 20px;}
+
+}

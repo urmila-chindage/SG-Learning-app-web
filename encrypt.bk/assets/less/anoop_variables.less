@@ -1,0 +1,249 @@
+
+// Responsive min width here:
+
+@max-width:999px;
+
+/*Side Menu Bar Width */
+
+@side-menu-bar:66px;
+
+
+// Basic Main Properties
+    
+    // Small Font Size
+        @font-small-size:12px;
+    
+    // Font Head Size
+        @font-head-size:15px;
+
+    // Font Color
+    @font-base-color: #2e3e4e;
+    
+    
+    //  Padding top all
+    @pad-top12:12px;
+    @pad-top15:15px;
+    
+    //Button Min Width
+    @btn-min-width:100px;
+
+/* header tabs bg */
+@header-tab-color:#e8e8e8;
+@cont-color:#f6f8fa;
+@sidebar-color:#f2f2f2;
+@border-base: 1px solid #a7aaae;
+
+/* Input chk-box align Center */
+/*=====================*/
+.Chk-box(@dimension){
+    width: @dimension;
+    height: @dimension;
+    padding: 0;
+    margin: 0;
+    margin-right:5px;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;   
+}
+
+
+/* Header font colors */
+@font-prime-color:#2e3e4e;
+
+/* Common Button Colors */
+
+
+/* border colors */
+@brdr-clr-light:#e1e1e1;
+
+
+/* BUTTON COMMON */
+    @btn-height:36px;
+    @line-height:@btn-height;
+    @btn-font-size:14px;
+    @btn-font-weight:600;
+    
+    
+
+/* Bevel Button Colors */
+    @bvl-green-bg:#33b565; /* Bevel button green */
+    
+    @bvl-color:#fff;
+    @bvl-brdr:#fff;
+    @bvl-btn-padding-vertical:0px;
+    @bvl-shadow:inset 0px -3px rgba(0,0,0,0.2);
+
+/* Button Big */
+    @big-button:45px;
+    
+/* General Buttons Colors */
+    @gen-green-bg:#33b565; /* Button green */
+    @gen-light-green:#61c170; /* Button light green */
+    @gen-red:#ff3333; /* Button Red */
+    @gen-blue:#0059b2; /* Button Blue */
+    @gen-blue-green:#00AEEF; /* Button Blue */
+    @gen-black:#373737; /* Button Black */
+    @gen-grey:#7C7C7C; /* Button grey */
+    @gen-orange:#ff9c00; /* Button Orange */
+    @gen-purple:#bf099f; /* Button Purple */
+    @gen-pink:#bf0952; /* Button Pink */
+    
+    @gen-color:#fff;
+    @gen-brdr:#fff;
+    @gen-btn-padding-vertical:0px;
+
+
+    /* Button common */
+    @margin-btn:5px; /* spacing in buttons */
+    
+    /* Button small colors */
+    @font-size-spn:11px;
+    
+    /* Green color */
+    @btn-small-active-bg:#00cc66;
+    
+    /*Orange color*/
+    @btn-small-inactive-bg:#ff9966;
+    
+    /* Red Color */
+    @btn-small-delete-bg:#ff3333;
+    
+    /*Blue Color*/
+    @btn-small-invited-bg:#0072ff;
+    
+    /* Light Grey color */
+    
+    @btn-light-grey:#A8A7A7;
+    
+    
+    @active-color:@btn-small-active-bg;
+    @inactive-color:@btn-small-inactive-bg;
+    @delete-color:@btn-small-delete-bg;
+    @invited-color:@btn-small-invited-bg;
+    
+    
+    @btn-small-color:#fff; /* Button Blue */
+    @btn-small-brdr:#fff; /* Button Blue */
+    @btn-small-padding:2px 8px; /* Button Blue */
+
+/* General label colors for label label-* */
+    /* Dark Green */
+    @lbl-dark-green:#0b8642;
+    
+    /* Grey */
+    @lbl-grey:#8a8a8a;
+    
+    /* Blue-tint1 */
+    @lbl-blue1:#0072ff;
+    
+    /* Red-tint */
+    @lbl-red:#FF3333; 
+    
+    /* Orange-tint */
+    @lbl-orange:#FFA362;
+
+
+// input style added here
+    @input-border:#c7c9ca;
+    @input-bg:#fff;
+    @input-pad:8px 12px;
+    
+    // :focus
+    @input-focus-color:#8D8D8D; /* Just change this color and see the magic both shadow and border changes */ /* Reform mixin "form.less" to find more */
+
+// Input Addon bg colors
+    @in-addon-bg:#fff;
+    
+
+/* SIDE BAR variable */ /* STARTS */
+/*============================*/
+    @rightwrap-width:350px;
+    
+    @mini-rightwrap:320px;
+    
+    @padding-left-menu:66px;  /* This padding left is taken from layout.less :- main-content */
+/*============================*/
+/* SIDE BAR variable */ /* ENDS */
+
+
+/* Header Top Fixed Variables */
+/*============================*/
+
+/* Fixed sizes */ /* No changes for this */ /*START*/
+@menu-bar:50px;
+@breadcrumb:30px;
+@nav-tbl-height:45px;
+/*END*/
+
+/* menu Only */ /* this size only changes according to the extra heading given */  /* style .base-cont-top */
+/*No heading*/ /*START*/
+@base-nav-height:52px;
+/*END*/
+
+/*With heading*/ /*START*/
+@base-nav-height-head:81px;
+/*END*/
+
+/* course heading */ /*START*/
+@course-heading-height: 52px + 100px;
+    //bottom right element;
+    @fixd-bottom-ht:86px;
+    @fixd-bottom-dwn:20px;
+    @fixd-bottom-font:13px;
+
+/*END*/
+
+
+
+/*=============================*/
+/* Header Top Fixed Variables */
+
+
+/* Padding left for .course-cont-wrap */ /*START*/
+@padding-left:30px;
+/*EMD*/
+
+
+/* Content tab or nav Set here */ /*START*/
+    
+    @cont_height:50px;
+    @min-width:120px;
+/*END*/
+
+/* .card-prieview WRAP*/ /*START*/
+    @img-container-bg:#2f97e6;
+    @img-holder-bg:#0970bf;
+    @img-holder-color:#fff;
+    @padding-size:15px;
+    @radius-circle:50%;
+    @holdr-size:125px;
+    @cont-radi:3px;
+    @card-shadow:0px 0px 2px rgba(0,0,0,0.3);
+    
+    /* star active */
+    @star-active:#d94d38;
+/*END*/
+
+
+/* Video player button */ /*START*/
+    @player-height:265px;
+    @player-width:389px;
+/* END */
+
+/* Box Display */ /*START*/
+@dsp-box-size:80px;
+@font-size:40px;
+@dsp-box-shadow:0px 0px 4px rgba(0,0,0,0.2);
+/*END*/
+
+
+/* Important for adjusting .main-content with relation to SIDE - MENU BAR's width */
+@padding-right-maincont:66px;
+
+/* Discussion width calc */
+@chat-box-width:35px;
+@chat-box-width-p10: @chat-box-width + 10px;
+
+/* Dropdown Styles */
+@drop-pad-vert:5px;
+@drop-font-size:14px;

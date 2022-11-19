@@ -1,0 +1,173 @@
+.header-wrap {
+    height: 100vh;
+    background: url("../assets/images/banner.png") no-repeat;
+    background-size: contain;
+    @include image-2x("../assets/images/banner.png",
+    cover);
+    background-position: top right;
+}
+
+.needNav {
+    background: rgba(255, 192, 203, 0);
+    border-radius: 0px !important;
+    margin: 0px !important;
+    min-height: 65px !important;
+    border-color: rgba(255, 255, 255, 0);
+    z-index: 9999999;
+    .needui-nav-ul>li {
+        &:hover {
+            a {
+                /* transition: all cubic-bezier(0.65, 0.89, 0.33, 1.89) .2s; */
+                transition: all ease-in .2s;
+                &:after {
+                    content: "";
+                    width: 100%;
+                    height: 3px;
+                    background: $base-white;
+                    left: 0%;
+                    position: absolute;
+                    bottom: -3px;
+                    transition: all ease-in .2s;
+                }
+            }
+        }
+    }
+    .needui-nav-ul>.active>a {
+        position: relative;
+        transition: all ease-in .2s;
+        &:after {
+            content: "";
+            width: 0%;
+            height: 3px;
+            background: $base-white;
+            left: 50%;
+            position: absolute;
+            bottom: -3px;
+            transition: all ease-in .2s;
+        }
+    }
+    .needui-nav-ul>.active>a,
+    .needui-nav-ul>.active>a:focus,
+    .needui-nav-ul>.active>a:hover {
+        background: transparent;
+        transition: all ease-in .2s;
+        color: black !important;
+        &:after {
+            content: "";
+            width: 100%;
+            height: 3px;
+            background: $base-white;
+            left: 0%;
+            position: absolute;
+            bottom: -3px;
+            transition: all ease-in .2s;
+        }
+    }
+}
+
+.needui-nav-ul {
+    >li>a {
+        padding: 0px;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        color: $navbar-font !important;
+        transition: all ease-in .2s;
+        line-height: 26px;
+        &:after {
+            content: "";
+            width: 0%;
+            height: 3px;
+            background: $base-white;
+            left: 50%;
+            position: absolute;
+            bottom: -3px;
+            transition: all ease-in .2s;
+        }
+    }
+}
+
+.needui-nav-ul2 {
+    >li>a {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        color: $navbar-font !important;
+        transition: all ease-in .2s;
+        line-height: 26px;
+    }
+    .anchor-log {
+        background: rgba(0, 0, 0, 0.41) !important;
+        color: $base-white !important;
+    }
+}
+
+.navbar-brand {
+    padding: 7px 0px;
+    padding-left: 15px;
+    background: url("../assets/images/logo.png") no-repeat;
+    @include image-2x("../assets/images/logo.png",
+    "cover");
+    display: block;
+    width: 215px;
+    box-sizing: content-box;
+    background-position: 30px 25px;
+}
+
+.banner-text-wrap {
+    margin-left: 80px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    h1 {
+        font-weight: 600;
+        line-height: 50px;
+        font-size: 2.8vw;
+    }
+    p {
+        margin: 25px 0px;
+        line-height: 22px;
+        font-size: 15px;
+    }
+}
+
+.btn-neet {
+    background: #4daefe;
+    background: -moz-linear-gradient(left, #4daefe 0%, #12e2fe 100%);
+    background: -webkit-linear-gradient(left, #4daefe 0%, #12e2fe 100%);
+    background: linear-gradient(to right, #4daefe 0%, #12e2fe 100%);
+    border: 0px;
+    @include border-radius(25px);
+    color: $base-white;
+    padding: 10px 25px;
+    font-weight: 600;
+    &:hover,
+    &:active,
+    &:focus {
+        background: #4daefe;
+        background: -moz-linear-gradient(left, #4daefe 0%, #12e2fe 100%);
+        background: -webkit-linear-gradient(left, #4daefe 0%, #12e2fe 100%);
+        background: linear-gradient(to right, #4daefe 0%, #12e2fe 100%);
+        color: $base-white;
+    }
+}
+
+.neet-table {
+    display: table;
+}
+
+.btn-text {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.svg-arrow {
+    display: table-cell;
+    vertical-align: middle;
+}

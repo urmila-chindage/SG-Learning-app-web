@@ -1,0 +1,419 @@
+/* chandu */
+ul.tutornames{width:100%;margin:0px auto;padding:0px;display:table;}
+ul.tutornames li{float:left;list-style:none;padding:10px 20px;}
+ul.tutornames li > img{border-radius:50%;width:100px;height:100px;}
+
+.add_to_whish{
+  margin-top: 10px;
+  padding: 8px !important;
+}
+.remove_wishlist{
+  margin-top: 10px;
+  padding: 8px !important;
+  font-size: 12px !important;
+}
+/*.icon-heart{
+  color:#ff2400;
+}*/
+.icon-heart-empty{
+  color:#ff2400;
+}
+
+.challenge-select{
+  margin-top: 10px;
+  width: 212px;
+}
+
+.wish-icon{
+    position: relative;
+    top: 24px;
+    float: right;
+    font-size: 16px;
+    color: #FF2400;
+}
+
+.wish-icon-search {
+    position: absolute;
+    float: right;
+    font-size: 16px;
+    color: #696969;
+    -webkit-text-stroke: 1px #fff;
+    right: 10px;
+}
+.wish-icon-search:hover{color: #FF2400;}
+
+.btn-search{
+    padding: 8px 16px !important;
+}
+
+.tab_box2 {
+    width: 100%;
+    float: left;
+    background-color: #ffffff;
+    box-shadow: 0 2px 3px #ccc;
+    padding: 0 0 8px;
+}
+
+.tab_box2:hover{
+	box-shadow:0 2px 3px #f2f2f2;
+}
+
+.lowercontent{
+	float:left;
+	padding:5px 10px 0px;
+	width:100%;
+	position:relative;
+}
+.bootstrap-select.btn-group .dropdown-toggle .filter-option{text-overflow:ellipsis;}
+.lowercontent >.star{margin-bottom:0px;}
+
+.tab_box2 .img_hover span {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    background: rgba(54, 54, 54, 0.5);
+    opacity: 0;
+    text-align: center;
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+.tab_box2 .img_hover {
+    width: 100%;
+    float: left;
+    position: relative;
+}
+
+.tab_box2 .img_hover span a {
+    font-size: 13px;
+    color: #fff;
+    background: url(../images/course.png) no-repeat right center rgba(255, 147, 37, 0.7);
+    border-radius: 4px;
+    display: inline-block;
+    padding: 3px 22px 5px 10px;
+    margin-top: 20%;
+}
+
+.tab_box2 .img_hover span:hover{opacity:1 !important;}
+
+.tab_box h2{
+  min-height: 35px !important;
+}
+
+.account li span { 
+    top: 4px !important;
+}
+
+.modal .orange{
+    background: #ff9325 none repeat scroll 0 0;
+    color: #fff;
+}
+
+.user_gen_question{
+    margin-top: 10px;
+}
+
+.user_gen_q_count{
+    margin-left: 10px;
+}
+
+/*css for assesment report comes here*/
+.panel.panel-default.assessment_report{background-color: #F6F8FA;border:none;border-radius: 0px;box-shadow: none;-webkit-box-shadow: none;    -moz-box-shadow: none;margin-top: 20px;}
+.assessment_report{font-family: 'Open Sans', sans-serif;}
+.reportimage{width:40px;height:40px;display:block;margin:0px auto;}
+ul.reports{list-style:none;margin:0px;padding:0px;}
+ul.reports li{float:left; width:14.2%;font-family: 'Open Sans', sans-serif;line-height:35px;}
+.lightgreytext{color:#a8a7a7}
+.spacer_btline > .row{border-bottom:solid 1px #e1e1e1;padding:6px 0px;}
+.report_name{white-space: nowrap;overflow: hidden;text-overflow: ellipsis;display:block;margin-right:10px;}
+.ranktext{text-align:right;}
+.nopad{padding:0px;}
+.greentext{color:#55a400;}
+.yellowtext{color:#e6bd00;}
+.redtext{color:#e64600;}
+.bluetext{color:#0073c4;}
+.yellowtext,.orangetext,.greentext,.redtext,.bluetext,.lightgreytext,.datetxt{font-family: 'Open Sans', sans-serif;font-size:13px;padding:0px;}
+/*css for assesment report ends here*/
+
+/*css for assesment report comes here*/
+ul.reports li{width:25%;}
+
+/*css for assesment report ends here*/
+
+
+/*css for assesment report comes here*/
+ul.reports li{width:33%;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+.reportimage{display:block;float:none;margin:0px auto;}
+.report_name{text-align:center;}
+/*css for assesment report ends here*/
+
+
+.darkbg{background:#F6F8FA;font-family: 'Open Sans', sans-serif;padding-bottom:50px;}
+    .borderrow{border-top:solid 1px #E8E8E8;border-bottom:solid 1px #E8E8E8;}
+    .darkborderrow{border-top:solid 1px #B8B8B8;border-bottom:solid 1px #B8B8B8;}
+    .row.borderrow{padding:10px 0px;}
+    .row.darkborderrow{padding:15px 0px;}
+    .eval_greentext{color:#55a400;}
+    .eval_yellowtext{color:#e6bd00;}
+    .eval_redtext{color:#e64600;}
+    .eval_bluetext{color:#0073c4;}
+    .eval_lightgreytext{color:#a8a7a7}
+    .eval_yellowtext,.eval_orangetext,.eval_greentext,.eval_redtext,.eval_bluetext,.eval_lightgreytext,.eval_datetxt,.eval_lightgreytext
+    {font-family: 'Open Sans', sans-serif;font-size:13px;padding:0px;}
+    .mybutton{text-transform:uppercase;}
+    .mainquestion{font-weight:700;text-transform:uppercase;color:#2e3e4e;font-size:15px;margin-left:10px;}
+    .maintitle{text-transform:uppercase;color:#2e3e4e;font-size:15px;margin-left:10px;font-weight:600;}
+    .spacer{padding:8px 15px;}
+    .eval_blacktext{font-weight:700;color:#2e3e4e;}
+    .wrongmarked,.negativemark{font-weight:700;color:#f33;}
+    .rightmarked,.positivemark{font-weight:700;color:#0c6;}
+    .deskright{text-align:right;}
+    .redicon{color:#f33;}
+    .greenicon{color:#0c6;}
+    .t_whitebox{background:#fff;padding:10px;border:solid 1px #ccc; border-radius:2px; -moz-border-radius:2px;font-size:13px;}
+    .lh{line-height:35px;}
+    @media all and (max-width:640px){
+        .sdfw{width:100%;}
+    }
+    
+    @media all and (max-width:480px){
+        .usdfw{width:100%;}
+        .spacer{padding:6px 0px;}
+        .usnp{padding:0px;}
+    }
+
+/** Yadu **/
+.teacher-name{
+    font-size:14px !important;
+}
+.teacher-desc{
+    font-size:13px !important;
+}
+.background-teachers{
+    background: #fff9f3 !important;
+}
+.icon-trash{
+    position: relative;
+    top: 24px;
+    float: right;
+    font-size: 16px;
+    color: #FF2400;
+}
+.succ-msg{
+    margin-left:250px;
+}
+.error-message-password{
+    margin-top:20px;
+    display:none;
+}
+.edit-profile-message{
+    margin-top:20px;
+    display:none;
+}
+.forgot-head{
+    padding:0!important;
+}
+.no-bg-image{
+    background:none!important;
+}
+.no-border-right{
+    border:none!important;
+}
+.expert-lecture-play{
+    width:50px!important;
+}
+.wish-added{
+    color:#FF2400!important;
+}
+#document_zoomer_wrapper{
+    margin:auto!important;
+}
+#document_zoomer_wrapper img{
+    -webkit-user-select: none!important;
+    -khtml-user-select: none!important;
+    -moz-user-select: none!important;
+    -o-user-select: none!important;
+    user-select: none!important;
+}
+/* Hari */
+
+.student-title {
+    float: left;
+    font-size: 12px;
+    width: 100%;
+}
+.notifications a.notification_view {
+    background: rgba(0, 0, 0, 0) url("../images/arrow.png") no-repeat scroll right center;
+    color: #27156e;
+    float: right;
+    font-size: 14px;
+    margin: 20px 0 0;
+    padding-right: 15px;
+}
+
+.notifications_listing {
+    float: left;
+    width: 100%;
+}
+
+.notifications_listing h2 {
+    color: #5d5d5d;
+    font-size: 20px;
+    margin: 0 0 20px;
+}
+
+.notifications_listing ul li span {
+    float: left;
+    margin-right: 20px;
+}
+
+.notifications_listing ul {
+    margin: 0;
+    padding: 0;
+}
+
+.notifications_listing ul li {
+    border-bottom: 1px solid #ccc;
+    color: #5d5d5d;
+    float: left;
+    font-size: 14px;
+    list-style-type: none;
+    margin: 0;
+    padding: 13px 0;
+    width: 100%;
+}
+
+.notifications_listing ul li:last-child {
+    border-bottom: 0;
+}
+
+.sction_1 .s_notification .sp_text a.notificaiton_sidebar_view {
+    color: #27166e;
+    font-size: 13px;
+    margin: 5px 10px 0 0;
+    width: 100%;
+    float: left;
+    display: block;
+	text-align:right;
+	text-transform:lowercase;
+}
+
+.links a {
+    padding: 3px 8px;
+}
+
+.links a.links {
+    background: rgb(254, 128, 0);
+    color: #fff;
+    border-radius: 5px;
+}
+
+.tab-content > .tab-pane .tab_box h2 {
+    overflow: hidden;
+    height: 30px;
+}
+.account #profile_picture img {
+    height: 39px;
+    width: 39px;
+}
+
+/*** MENU CSS ***/
+
+.sub_menus ul li ul li ul{position: absolute;top: 0;right: -175px;width: 175px;list-style: none;padding: 0;margin: 0;display: none;left:inherit}
+.sub_menus ul li ul li ul > li{height: 30px;background: #fafafa;}
+.sub_menus ul li ul li ul > li:hover { background: #eee; }
+.sub_menus ul li ul{ position: absolute;top: 31px;left: 0;width: 175px;list-style: none;padding: 0;margin: 0;display: none;}
+.sub_menus ul li ul > li{position: relative;background: #fafafa;width: 175px;padding: 0px 0px 10px 0px;z-index: 999}
+.sub_menus ul li ul > li > a {font-size:12px;margin-left:0px;}
+.sub_menus ul li ul > li:hover { background: #eee; }
+.sub_menus ul {list-style: none;padding: 0;margin: 0;float:left;width:100%;}
+.sub_menus ul > li{position: relative;float: left;height: 30px;}
+.sub_menus ul > li:hover { background: #eee; }
+.sub_menus ul li:hover > ul{
+    /* On hover, display the next level's menu */
+    display: inline;
+}
+/* Menu Link Styles */
+
+.sub_menus a /* Apply to all links inside the multi-level menu */
+{
+    font: bold 14px Arial, Helvetica, sans-serif;
+    color: #42000d;
+    text-decoration: none;
+    padding: 0 15px;
+    
+    /* Make the link cover the entire list item-container */
+    display: block;
+    line-height: 30px;
+    text-transform:uppercase;
+}
+.sub_menus a:hover { 
+    color: #fff; 
+}
+/*** END MENU CSS ***/
+
+
+/*** HEADER MENU CSS ***/
+
+.header-menu ul li ul li ul{position: absolute;top: 0;right: -175px;width: 175px;list-style: none;padding: 0;margin: 0;display: none;left:inherit}
+.header-menu ul li ul li ul > li{height: 30px;background: #fafafa;}
+.header-menu ul li ul li ul > li:hover { background: #eee; }
+.header-menu ul li ul {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 175px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    padding: 15px 0px;
+}
+.header-menu ul li ul > li{position: relative;background: #fafafa;width: 175px;padding: 0px 0px 10px 0px;z-index: 999}
+.header-menu ul li ul > li > a {font-size:12px;margin-left:0px;}
+.header-menu ul li ul > li:hover { background: #eee; }
+.header-menu ul {list-style: none;padding: 0;margin: 0;}
+.header-menu ul > li{position: relative;float: left;height: 30px;}
+.header-menu ul > li:hover { background: #eee; }
+.header-menu ul li:hover > ul{
+    /* On hover, display the next level's menu */
+    display: inline;
+}
+/* Menu Link Styles */
+
+.header-menu a /* Apply to all links inside the multi-level menu */
+{
+    font: bold 14px Arial, Helvetica, sans-serif;
+    color: #42000d;
+    text-decoration: none;
+    padding: 0 15px;
+    
+    /* Make the link cover the entire list item-container */
+    display: block;
+    line-height: 30px;
+    text-transform:uppercase;
+}
+.header-menu a:hover { 
+    color: #fff; 
+}
+/*** END HEADER MENU CSS ***/
+.my-course-status{
+    width: 100%;
+    float: left;
+    padding: 4px 10px 7px;
+}
+
+/* Thanveer */
+.block{ width: 100%}
+.innercontent{ display: none;}
+.pdfloader{ background: #000; color: #000;padding:0px;box-sizing:border-box;}
+.footbox{border-top:solid 1px #ccc;}
+.right_p > img{ max-width:100%;}
+.pdf_zoomin{bottom:75px!important; right:30%!important;}
+.pdf_zoomout{bottom:75px!important;right:34%!important;}
+
+/*@media all and (max-width:768px){
+	.header-menu ul > li{width:100%; float:left;}
+}*/

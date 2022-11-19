@@ -1,0 +1,14 @@
+
+Usefull mixins:
+
+//box shadow given
+.box-shadow(none);
+
+
+//button color given in this style
+.button-variant(@btn-primary-color; @btn-primary-bg; @btn-primary-border);
+
+
+// Just need to specify the color code like #fff or #000 to get the border color and the shadow color instantly
+
+.form-control-focus(@color: @input-border-focus);

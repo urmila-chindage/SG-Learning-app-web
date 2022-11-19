@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+ .orange-btn-alterd-for-next-page{
+    border-bottom: 2px solid #f58700;
+}
+.padtb50 {
+    height: 100%;
+    padding: 37px 35px;
+}
+
+
+
+@media only screen and (max-width: 1199px) {
+ .orange-btn-alterd-for-next-page{
+    border-bottom: 2px solid #f58700;
+}
+} /*media querry*/
+
+
+@media only screen and (max-width: 991px) {
+ .orange-btn-alterd-for-next-page{
+    border-bottom: 1px solid #f58700;
+}
+} /*media querry*/
+
+
+
+
+} /*-webkit-min-device-pixel-ratio:0*/

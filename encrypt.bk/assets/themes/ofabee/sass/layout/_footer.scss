@@ -1,0 +1,112 @@
+footer {
+	width: 100%;
+	float: left;
+	background: url(../images/footer.jpg) no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding: 40px 0px;
+	h2 {
+		font-size: 18px;
+		color: #fff;
+		margin: 40px 0px 25px;
+		font-weight: bold;
+	}
+	p {
+		font-size: 14px;
+		color: #fff;
+		margin: 0px 0px 25px;
+		line-height: 25px;
+	}
+	h3 {
+		font-size: 14px;
+		color: #fff;
+		margin: 0px 0px 10px;
+		padding-bottom: 10px;
+		border-bottom: 1px solid #fff;
+		span {
+			color: #fed3a8;
+		}
+	}
+	h6 {
+		font-size: 12px;
+		color: #fff;
+		margin: 5px 0px;
+	}
+	ul {
+		margin: 0px;
+		padding: 0px;
+		li {
+			margin: 0px 0px 4px;
+			padding: 0px;
+			list-style-type: none;
+			a {
+				font-size: 14px;
+				color: #fff;
+				text-decoration: underline;
+				&:hover {
+					color: #ff9c38;
+				}
+			}
+		}
+	}
+}
+.footer_link {
+	width: 100%;
+	float: left;
+	color: #fff;
+	margin-bottom: 7px;
+	a {
+		font-size: 13px;
+		color: #fff;
+		&:hover {
+			color: #ff9c38;
+		}
+	}
+}
+.callus {
+	width: 100%;
+	float: left;
+	.left {
+		width: 20%;
+		float: left;
+		font-size: 16px;
+		color: #fff;
+	}
+	.right {
+		width: 80%;
+		float: left;
+		font-size: 16px;
+		color: #fff;
+		font-weight: bold;
+	}
+}
+.social {
+	width: 100%;
+	float: left;
+	ul {
+		margin: 0px;
+		padding: 0px;
+		li {
+			margin: 0px 5px;
+			padding: 0px;
+			list-style-type: none;
+			float: left;
+			&:first-child {
+				margin-left: 0px;
+			}
+			a {
+				width: 33px;
+				height: 33px;
+				float: left;
+				background: #000;
+				border-radius: 50%;
+				&:hover {
+					background: #ff9c38;
+				}
+			}
+		}
+	}
+}
+

@@ -1,0 +1,484 @@
+
+body {
+    background: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    color: #000;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html, body, .wrapper, .left, .right {
+    height: 100%;
+    min-height: 100%;
+}
+
+body, div {
+    margin: 0;
+    border: 0 none;
+    padding: 0;
+}
+
+.wrapper {
+    margin: 0px auto;
+    overflow: hidden;
+    width: 100%;
+}
+
+.left {
+    background: #fff;
+    left: 0px;
+    width: 75%;
+    position: absolute;
+    top: 0px;
+}
+
+.innercontent {
+    color: #fff;
+    position: absolute;
+    bottom: 45px;
+}
+
+.video-container {
+    position: relative;
+    height: auto;
+    overflow: hidden;
+    width: 100%;
+}
+
+img.livevideopreview {
+    width: 100%;
+}
+
+.right {
+    position: fixed;
+    display: block;
+    right: 0px;
+    width: 25%;
+    height: 100%;
+}
+
+.tabs ul {
+    list-style-type: none;
+    bottom: -1px;
+    position: relative;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.tabs li {
+    float: left;
+    width: 33.33%;
+}
+
+.tabs a {
+    font-size: 16px;
+    display: block;
+    padding: 10px 10px;
+    color: #000;
+    text-decoration: none;
+    margin: 0px;
+    border-top: 1px solid #CCC;
+    border-left: 1px solid #DDD;
+    border-right: 1px solid #DDD;
+}
+
+.liveclasstabs>li.active>a, .liveclasstabs>li.active>a:focus, .liveclasstabs>li.active>a:hover {
+    background-color: #4cbf00;
+    text-transform: capitalize;
+    border-radius: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+}
+
+.liveclasstabs>li.active>a, .liveclasstabs>li.active>a:focus, .liveclasstabs>li.active>a:hover {
+    color: #fff;
+}
+
+.liveclasstabs>li {
+    background-color: #eaeaea;
+    width: 33.33%;
+    text-align: center;
+    border-radius: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+}
+
+.tab-content.chatboxborder, .panel.chatbox {
+    box-shadow: none;
+    border: none;
+}
+
+.chatboxborder {
+    border: 1px solid #ddd;
+    background: #fff;
+    padding-top: 3px;
+}
+
+.tab-content>.active {
+    display: block;
+}
+
+.panel.chatbox {
+    margin-bottom: 0px;
+}
+
+.tab-content.chatboxborder, .panel.chatbox {
+    box-shadow: none;
+    border: none;
+}
+
+.panel {
+    box-shadow: 0 2px 0 rgba(0,0,0,0.075);
+    border-radius: 0;
+    border: 0;
+    margin-bottom: 24px;
+}
+
+.smallpad {
+    padding: 10px;
+}
+
+.panel-heading {
+    position: relative;
+    height: 58px;
+    padding: 0;
+    border-bottom: 1px solid #ededed;
+}
+
+.collapse.in {
+    display: block;
+}
+
+.nano {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.nano>.nano-content {
+    position: absolute;
+    overflow: auto;
+    overflow-x: hidden;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding-top: 20px;
+}
+
+.pad-all {
+    padding: 5px;
+}
+
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+ol, ul {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.mar-btm {
+    margin-bottom: 15px;
+}
+
+.media-block .media-left {
+    display: block;
+    float: left;
+    padding: 0px;
+}
+
+.media-body, .media-left, .media-right {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.img-sm {
+    width: 42px;
+    height: 42px;
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.panel-title {
+    font-weight: normal;
+    padding: 0px;
+    font-size: 1.416em;
+    line-height: 50px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.panel .panel-heading, .panel>:first-child {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.panel-heading {
+    position: relative;
+    height: 58px;
+    padding: 0;
+    border-bottom: 1px solid #ededed;
+}
+
+.media-block .media-body {
+    display: block;
+    overflow: hidden;
+    width: auto;
+}
+
+.pad-hor {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+a.media-heading {
+    color: #606060;
+    display: block;
+}
+
+.media-heading {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+}
+
+.speech>p {
+    margin:0px;
+}
+
+.speech {
+    position: relative;
+    background: #eaeaea;
+    color: #606060;
+    display: inline-block;
+    border-radius: 0;
+    padding: 6px 10px;
+    max-width:200px;
+    border-radius: 0px 5px 5px 5px;
+    -moz-border-radius: 0px 5px 5px 5px;
+    -webkit-border-radius: 0px 5px 5px 5px;
+}
+
+.speech:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 0;
+    top: -15px;
+    border-top: 1px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-right: 7px solid #eaeaea;
+    margin: 15px 0 0 -6px;
+}
+.speech-right>.speech:before {
+    left: auto;
+    right: 0;
+    border-top: 1px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 7px solid #e8f8dd;
+    border-right: 0;
+    margin: 15px -6px 0 0;
+    top:-17px;
+}
+.speech .media-heading {
+    font-size: 1.2em;
+    color: #317787;
+    display: block;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    font-weight: 300;
+}
+.speech-time {
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: .8em;
+    font-weight: 300;
+}
+.media-block .media-right {
+    float: right;
+}
+.speech-right {
+    text-align: right;
+}
+.speech-right>.speech {
+    background: #e8f8dd;
+    color: #606060;
+    text-align: right;
+    border-radius: 5px 0px 5px 5px;
+    -moz-border-radius: 5px 0px 5px 5px;
+    -webkit-border-radius: 5px 0px 5px 5px;
+}
+.speech-right>.speech .media-heading {
+    color: #606060;
+}
+
+.media-block .media-right {
+    float: right;
+}
+
+.panel-footer.chat {
+    padding: 0px;
+    border: none;
+    border-radius: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+}
+
+.panel-footer {
+    background-color: #f5f5f5;
+}
+
+.sendchat {
+    margin: 0px;
+}
+
+.fullsedbox {
+    background: #eaeaea;
+}
+
+.input-group {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+}
+
+.input-group .form-control:first-child {
+    background: #f8f8f8;
+}
+
+input.form-control.plainbox {
+    border-right: solid 1px #ccc;
+    border: none;
+}
+
+.input-group-btn {
+    position: relative;
+    font-size: 0;
+    white-space: nowrap;
+}
+
+.input-group-btn {
+    width: 1%;
+    vertical-align: middle;
+}
+
+.input-group-btn {
+    display: table-cell;
+}
+
+.input-group-btn:last-child>.btn {
+    background: #f8f8f8;
+}
+
+.input-group-btn:last-child>.btn {
+    background-color: #4cbf00;
+    color: #fff;
+    text-transform: capitalize;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    padding: 6px 18px;
+    border-radius: 2px;
+}
+
+
+
+.input-group-btn:last-child>.btn, .input-group-btn:last-child>.btn-group {
+    z-index: 2;
+    margin-left: -1px;
+}
+
+.input-group-btn>.btn {
+    position: relative;
+}
+
+.sendchats {
+    background: url(../images/icons/sendchat.png) no-repeat;
+    width: 19px;
+    height: 19px;
+    background-position: 10px 10px;
+}
+
+.form-control {
+    height: 40px;
+}
+
+.input-group .form-control {
+    position: relative;
+    z-index: 2;
+    float: left;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.form-control {
+    height: 40px;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+input.form-control.plainbox {
+    background: transparent;
+    border-right: solid 1px #ccc;
+    border: none;
+}
+
+.input-group .form-control, .input-group-addon, .input-group-btn {
+    display: table-cell;
+}
+
+.form-control:focus {
+    border-color: transparent;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgb(77, 191, 0);
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgb(77, 191, 0);
+}
+
+.btn.focus, .btn:focus, .btn:hover {
+    text-decoration: none;
+}
+
+
+@media (max-width: 1024px) {
+    .innercontent.textcontainer, .video-container, .left, .pdfloader {
+        width: 100%;
+    }
+}
+
+
+
